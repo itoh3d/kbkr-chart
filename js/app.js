@@ -39,12 +39,12 @@ var myChart = new Chart(ctx, {
             xAxes: [{
                 scaleLabel: {
                     display: true,
-                    fontSize: 20,
+                    fontSize: 14,
                     fontFamily: "Kosugi Maru",
                     labelString: "年間利回り"
                 },
                 ticks: {
-                    fontSize: 16,
+                    fontSize: 12,
                     fontFamily: "Kosugi Maru",
                     suggestedMin: 0,
                     callback: function (value, index, values) {
@@ -55,12 +55,12 @@ var myChart = new Chart(ctx, {
             yAxes: [{
                 scaleLabel: {
                     display: true,
-                    fontSize: 20,
+                    fontSize: 12,
                     fontFamily: "Kosugi Maru",
                     labelString: "年間損益"
                 },
                 ticks: {
-                    fontSize: 16,
+                    fontSize: 12,
                     fontFamily: "Kosugi Maru",
                     suggestedMin: 0,
                     callback: function (value, index, values) {
@@ -75,15 +75,15 @@ var myChart = new Chart(ctx, {
 });
 
 
-//. クリックイベントハンドラー
+// クリックイベントハンドラー
 ctx.addEventListener('click', function (evt) {
     var item = myChart.getElementAtEvent(evt);
     if (item.length == 0) {
         return;
     }
     item = item[0];
-    var index = item._datasetIndex;  //. 配列の何番目のデータがクリックされたか
-    var item_data = item._chart.config.data.datasets;  //. クリックされたオブジェクトのデータセット
+    var index = item._datasetIndex;
+    var item_data = item._chart.config.data.datasets;
     var item_label = item_data[index].label;
     console.log(index);
     console.log(item_data);
