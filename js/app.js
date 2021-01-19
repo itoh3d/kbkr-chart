@@ -1,17 +1,16 @@
 
-var kabu_datasets = 
-[
-    { label : 'itoh3d' , data : [{ x : 23.77, y: 503, r: 28.9 }]},
-    { label : 'musou1231' , data : [{ x : 5.2, y: 318, r: 45.3 }]},
-    { label : 'MUCHO84928709' , data : [{ x : 31.98, y: 150, r: 14 }]},
-    { label : 'masakabu1213' , data : [{ x : 8.9, y: 33, r: 11.3 }]},
-    { label : 'M31hI' , data : [{ x : 6.3, y: 398, r: 46.2 }]},
-    { label : 'noDance_hall' , data : [{ x : 2.76, y: 104, r: 35.2 }]},
-    { label : 'btlr6P1YjrlTMjX' , data : [{ x : 3.35, y: 40, r: 19.9 }]},
-    { label : 'goron__chan' , data : [{ x : 48.07, y: 943, r: 30.4 }]},
-    
-];
+var kabu_datasets =
+    [
+        { label: 'itoh3d', data: [{ x: 23.77, y: 503, r: 14.4 }] },
+        { label: 'musou1231', data: [{ x: 5.2, y: 318, r: 22.6 }] },
+        { label: 'MUCHO84928709', data: [{ x: 31.98, y: 150, r: 7 }] },
+        { label: 'masakabu1213', data: [{ x: 8.9, y: 33, r: 5.6 }] },
+        { label: 'M31hI', data: [{ x: 6.3, y: 398, r: 23.1 }] },
+        { label: 'noDance_hall', data: [{ x: 2.76, y: 104, r: 17.6 }] },
+        { label: 'btlr6P1YjrlTMjX', data: [{ x: 3.35, y: 40, r: 9.9 }] },
+        { label: 'goron__chan', data: [{ x: 48.07, y: 943, r: 15.2 }] },
 
+    ];
 
 
 
@@ -29,6 +28,8 @@ var myChart = new Chart(ctx, {
         legend: {
             display: false
         },
+
+        maintainAspectRatio: false,
 
         tooltips: {
             bodyFontSize: 16,
