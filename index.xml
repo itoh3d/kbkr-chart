@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>株クラチャート</title>
+    <link>https://itoh3d.github.io/kbkr-chart/</link>
+    <description>Recent content on 株クラチャート</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language><atom:link href="https://itoh3d.github.io/kbkr-chart/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>説明</title>
+      <link>https://itoh3d.github.io/kbkr-chart/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://itoh3d.github.io/kbkr-chart/about/</guid>
+      <description>株クラチャート is 何?  株クラを運用成績動向を可視化したもの。 バブルをクリックすると、その人のところに飛びます。  参加方法  TOP画面のツイートボタンから、運用成績を投稿してください。 そのうち反映されます（リアルタイムではない）  クレーム対応  削除要望等あれば随時リプやDMにてお願いします。  免責  データに正確性、真実性などは全く無い。 雰囲気を楽しんで下さい。  </description>
+    </item>
+    
+  </channel>
+</rss>
