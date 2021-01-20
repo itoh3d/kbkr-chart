@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>株クラチャート</title>
     <meta property="og:title" content="株クラチャート" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://itoh3d.github.io/kbkr-chart/" />
-<meta property="og:image" content="サムネイル画像のURL" />
-<meta property="og:site_name" content="株クラチャート" />
-<meta property="og:description" content="株クラを運用成績動向を可視化しているサイトです。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://itoh3d.github.io/kbkr-chart/" />
+    <meta property="og:image" content="サムネイル画像のURL" />
+    <meta property="og:site_name" content="株クラチャート" />
+    <meta property="og:description" content="株クラを運用成績動向を可視化しているサイトです。" />
 
     
     <style>
@@ -19,33 +19,41 @@
     html body {
         font-family: 'Kosugi Maru', sans-serif;
         background-color: white;
-    }
-
+	}
+	
     :root {
         --accent: #AAA;
         --border-width:  5px ;
     }
 
 
-#chartjs-tooltip {
-			opacity: 1;
-			position: absolute;
-			background: rgba(0, 0, 0, .7);
-			color: white;
-			border-radius: 3px;
-			-webkit-transition: all .1s ease;
-			transition: all .1s ease;
-			pointer-events: auto;
-			-webkit-transform: translate(-50%, 0);
-			transform: translate(-50%, 0);
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+
+	#chartjs-tooltip {
+				opacity: 1;
+				position: absolute;
+				background: rgba(0, 0, 0, .7);
+				color: white;
+				border-radius: 3px;
+				-webkit-transition: all .1s ease;
+				transition: all .1s ease;
+				pointer-events: auto;
+				-webkit-transform: translate(-50%, 0);
+				transform: translate(-50%, 0);
+				
 }
 
-.chartjs-tooltip-key {
-    display: inline-block;
-  	width: 10px;
-  	height: 10px;
-  	margin-right: 10px;
-}
+
+	.chartjs-tooltip-key {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin-right: 10px;
+	}
 
 </style>
 
@@ -144,7 +152,7 @@
         <canvas id="myBubbleChart"></canvas>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
-    <script src="js/app.js?0120327"></script>
+    <script src="js/app.js?0120328"></script>
 
 
 </main>

@@ -1,15 +1,17 @@
 
 var kabu_datasets =
     [
-        { label : 'itoh3d' , data : [{ x : 22.9, y: 484, r: 14.4 }]},
-        { label : 'musou1231' , data : [{ x : 5.2, y: 318, r: 22.6 }]},
-        { label : 'MUCHO84928709' , data : [{ x : 300, y: 600, r: 8.5 }]},
-        { label : 'M31hI' , data : [{ x : 6.9, y: 436, r: 23.2 }]},
-        { label : 'noDance_hall' , data : [{ x : 4.69, y: 177, r: 17.7 }]},
-        { label : 'btlr6P1YjrlTMjX' , data : [{ x : 6.01, y: 74, r: 10.2 }]},
-        { label : 'goron__chan' , data : [{ x : 42.04, y: 846, r: 15.1 }]},
-        { label : 'sistinavc' , data : [{ x : 82.28, y: 2990, r: 23 }]},
-        
+        { label: 'itoh3d', data: [{ x: 22.9, y: 484, r: 14.4 }] },
+        { label: 'musou1231', data: [{ x: 5.2, y: 318, r: 22.6 }] },
+        { label: 'MUCHO84928709', data: [{ x: 300, y: 600, r: 8.5 }] },
+        { label: 'M31hI', data: [{ x: 6.9, y: 436, r: 23.2 }] },
+        { label: 'noDance_hall', data: [{ x: 4.69, y: 177, r: 17.7 }] },
+        { label: 'btlr6P1YjrlTMjX', data: [{ x: 6.01, y: 74, r: 10.2 }] },
+        { label: 'goron__chan', data: [{ x: 42.04, y: 846, r: 15.1 }] },
+        { label: 'sistinavc', data: [{ x: 82.28, y: 2990, r: 23 }] },
+        { label: 'kabusaga', data: [{ x: -2.5, y: -1, r: 1.8 }] },
+        { label: 'HappyHikingDay', data: [{ x: 21, y: 43, r: 4.5 }] },
+
 
     ];
 
@@ -23,18 +25,18 @@ var myChart = new Chart(ctx, {
     data: {
         datasets: kabu_datasets
     },
+    hoverRadius: 10,
 
     options: {
         legend: {
             display: false
         },
 
-        events: ['click'],
-
         maintainAspectRatio: false,
 
         tooltips: {
             enabled: false,
+
 
             custom: function (tooltipModel) {
                 // ツールチップ要素
@@ -92,8 +94,15 @@ var myChart = new Chart(ctx, {
                         innerHtml += '<tr><td>' + '<a href="https://twitter.com/' + body_content[0] + '/">' + body_content[0] + '</a>' + '</td></tr>';
                         innerHtml += '<tr><td>' + '年初来パフォ：' + body_content[1][0] + ' %</td></tr>';
                         innerHtml += '<tr><td>' + '年間損益：' + body_content[1][1] + ' 万円</td></tr>';
-                        innerHtml += '<tr><td>' + '総資産：' + Math.round((2 * body_content[1][2]) **2  * 3.13 /10)*10+ ' 万円+</td></tr>';
-                        console.log(innerHtml);
+                        var shisan = Math.round((2 * body_content[1][2]) ** 2 * 3.13 / 100) * 100;
+                        if(shisan == 0){
+                            innerHtml += '<tr><td>' + '総資産：～ 100 万円</td></tr>';
+                        }
+                        else{
+                            innerHtml += '<tr><td>' + '総資産：' + shisan + ' 万円+</td></tr>';
+                        }
+                        
+
                     });
                     innerHtml += '</tbody>';
 
@@ -108,12 +117,21 @@ var myChart = new Chart(ctx, {
                 tooltipEl.style.opacity = 1;
                 tooltipEl.style.position = 'absolute';
                 tooltipEl.style.left = position.left + window.pageXOffset + tooltipModel.caretX + 'px';
+                console.log(position);
+                console.log(window.pageXOffset);
+                console.log(tooltipModel.caretX);
+                console.log(tooltipEl.style.left);
+                //if (position.left + window.pageXOffset + tooltipModel.caretX + 100 > 800) { 
+                //    tooltipEl.style.left += - 500 };
+                //    console.log(tooltipEl.style.left);
                 tooltipEl.style.top = position.top + window.pageYOffset + tooltipModel.caretY + 'px';
                 tooltipEl.style.fontFamily = tooltipModel._bodyFontFamily;
                 tooltipEl.style.fontSize = tooltipModel.bodyFontSize;
                 tooltipEl.style.fontStyle = tooltipModel._bodyFontStyle;
                 tooltipEl.style.padding = tooltipModel.yPadding + 'px ' + tooltipModel.xPadding + 'px';
-                console.log(tooltipModel.style)
+                tooltipEl.style.caretSize = 5 + 'px';
+
+                
             }
 
         },
@@ -129,7 +147,6 @@ var myChart = new Chart(ctx, {
                 ticks: {
                     fontSize: 12,
                     fontFamily: "Kosugi Maru",
-                    suggestedMin: 0,
                     callback: function (value, index, values) {
                         return value + '%'
                     }
@@ -145,7 +162,6 @@ var myChart = new Chart(ctx, {
                 ticks: {
                     fontSize: 12,
                     fontFamily: "Kosugi Maru",
-                    suggestedMin: 0,
                     callback: function (value, index, values) {
                         return value + '万円'
                     }

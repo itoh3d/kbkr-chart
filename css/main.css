@@ -58,7 +58,7 @@ img {
 /* Colored links */
 
 a:link, a:visited {
-    color: var(--accent);
+    color: #4f6ae4;
 }
 
 a.icon:hover {

@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>説明</title>
     <meta property="og:title" content="株クラチャート" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://itoh3d.github.io/kbkr-chart/" />
-<meta property="og:image" content="サムネイル画像のURL" />
-<meta property="og:site_name" content="株クラチャート" />
-<meta property="og:description" content="株クラを運用成績動向を可視化しているサイトです。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://itoh3d.github.io/kbkr-chart/" />
+    <meta property="og:image" content="サムネイル画像のURL" />
+    <meta property="og:site_name" content="株クラチャート" />
+    <meta property="og:description" content="株クラを運用成績動向を可視化しているサイトです。" />
 
     
     <style>
@@ -19,33 +19,41 @@
     html body {
         font-family: 'Kosugi Maru', sans-serif;
         background-color: white;
-    }
-
+	}
+	
     :root {
         --accent: #AAA;
         --border-width:  5px ;
     }
 
 
-#chartjs-tooltip {
-			opacity: 1;
-			position: absolute;
-			background: rgba(0, 0, 0, .7);
-			color: white;
-			border-radius: 3px;
-			-webkit-transition: all .1s ease;
-			transition: all .1s ease;
-			pointer-events: auto;
-			-webkit-transform: translate(-50%, 0);
-			transform: translate(-50%, 0);
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+
+	#chartjs-tooltip {
+				opacity: 1;
+				position: absolute;
+				background: rgba(0, 0, 0, .7);
+				color: white;
+				border-radius: 3px;
+				-webkit-transition: all .1s ease;
+				transition: all .1s ease;
+				pointer-events: auto;
+				-webkit-transform: translate(-50%, 0);
+				transform: translate(-50%, 0);
+				
 }
 
-.chartjs-tooltip-key {
-    display: inline-block;
-  	width: 10px;
-  	height: 10px;
-  	margin-right: 10px;
-}
+
+	.chartjs-tooltip-key {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin-right: 10px;
+	}
 
 </style>
 
@@ -134,29 +142,33 @@
 
     <div>
         <h2>説明</h2>
-        <h5>v0.01</h5>
+        <h5>v0.02</h5>
         
 
     </div>
 
     <div align="start" class="content"><h3 id="株クラチャート-is-何">株クラチャート is 何?</h3>
 <ul>
-<li>株クラを運用成績動向を可視化したもの。</li>
-<li>バブルをクリックすると、その人のところに飛びます。</li>
+<li>株クラの運用成績動向を可視化したものです。</li>
 </ul>
 <h3 id="参加方法">参加方法</h3>
 <ul>
-<li>TOP画面のツイートボタンから、運用成績を投稿してください。</li>
+<li>TOP画面のツイートボタンから、運用成績をツイートしてください。</li>
 <li>そのうち反映されます（リアルタイムではない）</li>
 </ul>
-<h3 id="クレーム対応">クレーム対応</h3>
+<h4 id="詳細仕様">詳細仕様</h4>
 <ul>
-<li>削除要望等あれば随時リプやDMにてお願いします。</li>
+<li>ハッシュタグ「<a href="https://twitter.com/hashtag/%E6%A0%AA%E3%82%AF%E3%83%A9%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88">#株クラチャート</a>」のツイートを自動収集しています。</li>
+<li>ツイートには、「総資産〇〇万円,　年間損益〇〇万円,　年間利回り〇〇%」を入力してください。</li>
+<li>カンマ「,」を削除すると上手く収集出来ない場合があります。</li>
+<li>総資産が未入力の場合は、10万円として登録されます。</li>
+<li>年間損益、年間利回りが未入力の場合は登録されません。</li>
 </ul>
 <h3 id="免責">免責</h3>
 <ul>
-<li>データに正確性、真実性などは全く無い。</li>
+<li>本サイトのデータに正確性、真実性などは全く無いです。</li>
 <li>雰囲気を楽しんで下さい。</li>
+<li>ご意見・ご要望はリプ・DMなどでご連絡下さい。</li>
 </ul>
 </div>
 
