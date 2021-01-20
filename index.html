@@ -6,6 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>株クラチャート</title>
+    <meta property="og:title" content="株クラチャート" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://itoh3d.github.io/kbkr-chart/" />
+<meta property="og:image" content="サムネイル画像のURL" />
+<meta property="og:site_name" content="株クラチャート" />
+<meta property="og:description" content="株クラを運用成績動向を可視化しているサイトです。" />
 
     
     <style>
@@ -19,6 +25,27 @@
         --accent: #AAA;
         --border-width:  5px ;
     }
+
+
+#chartjs-tooltip {
+			opacity: 1;
+			position: absolute;
+			background: rgba(0, 0, 0, .7);
+			color: white;
+			border-radius: 3px;
+			-webkit-transition: all .1s ease;
+			transition: all .1s ease;
+			pointer-events: auto;
+			-webkit-transform: translate(-50%, 0);
+			transform: translate(-50%, 0);
+}
+
+.chartjs-tooltip-key {
+    display: inline-block;
+  	width: 10px;
+  	height: 10px;
+  	margin-right: 10px;
+}
 
 </style>
 
@@ -113,11 +140,11 @@
             data-show-count="false">Tweet</a></p>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
-    <div class="chart-container" style="position: relative; width:85vw; height:70vh">
+    <div class="chart-container" style="position: relative; width:90vw; height:65vh">
         <canvas id="myBubbleChart"></canvas>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
-    <script src="js/app.js?01191742"></script>
+    <script src="js/app.js?0120327"></script>
 
 
 </main>
