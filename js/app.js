@@ -3,13 +3,13 @@ var kabu_datasets =
     [
         { label: 'itoh3d', data: [{ x: 22.9, y: 484, r: 14.4 }] },
         { label: 'musou1231', data: [{ x: 5.2, y: 318, r: 22.6 }] },
-        { label: 'MUCHO84928709', data: [{ x: 300, y: 600, r: 8.5 }] },
+        { label: 'MUCHO84928709', data: [{ x: 185.2, y: 715, r: 8.5 }] },
         { label: 'M31hI', data: [{ x: 6.9, y: 436, r: 23.2 }] },
-        { label: 'noDance_hall', data: [{ x: 4.69, y: 177, r: 17.7 }] },
-        { label: 'btlr6P1YjrlTMjX', data: [{ x: 6.01, y: 74, r: 10.2 }] },
-        { label: 'goron__chan', data: [{ x: 42.04, y: 846, r: 15.1 }] },
-        { label: 'sistinavc', data: [{ x: 82.28, y: 2990, r: 23 }] },
-        { label: 'kabusaga', data: [{ x: -2.5, y: -1, r: 1.8 }] },
+        { label: 'noDance_hall', data: [{ x: 4.7, y: 177, r: 17.7 }] },
+        { label: 'btlr6P1YjrlTMjX', data: [{ x: 6, y: 74, r: 10.2 }] },
+        { label: 'goron__chan', data: [{ x: 42, y: 846, r: 15.1 }] },
+        { label: 'sistinavc', data: [{ x: 82.3, y: 2990, r: 23 }] },
+        { label: 'kabusaga', data: [{ x: -2.5, y: 1, r: 1.8 }] },
         { label: 'HappyHikingDay', data: [{ x: 21, y: 43, r: 4.5 }] },
 
 
@@ -18,6 +18,7 @@ var kabu_datasets =
 
 
 // チャート描画
+
 var ctx = document.getElementById("myBubbleChart");
 var myChart = new Chart(ctx, {
     type: 'bubble',
@@ -84,7 +85,6 @@ var myChart = new Chart(ctx, {
                         body[0] = body[0].replace('(', '').replace(')', '').replace(/\s+/g, "");
                         var body_content = body[0].split(':');
                         body_content[1] = body_content[1].split(',');
-                        console.log(body_content);
 
                         var colors = tooltipModel.labelColors[i];
                         var style = 'background:' + colors.backgroundColor;
@@ -95,13 +95,13 @@ var myChart = new Chart(ctx, {
                         innerHtml += '<tr><td>' + '年初来パフォ：' + body_content[1][0] + ' %</td></tr>';
                         innerHtml += '<tr><td>' + '年間損益：' + body_content[1][1] + ' 万円</td></tr>';
                         var shisan = Math.round((2 * body_content[1][2]) ** 2 * 3.13 / 100) * 100;
-                        if(shisan == 0){
+                        if (shisan == 0) {
                             innerHtml += '<tr><td>' + '総資産：～ 100 万円</td></tr>';
                         }
-                        else{
+                        else {
                             innerHtml += '<tr><td>' + '総資産：' + shisan + ' 万円+</td></tr>';
                         }
-                        
+
 
                     });
                     innerHtml += '</tbody>';
@@ -112,27 +112,48 @@ var myChart = new Chart(ctx, {
 
                 // `this` はツールチップ全体です
                 var position = this._chart.canvas.getBoundingClientRect();
+                console.log(position);
 
-                // 表示、配置、およびフォントスタイルの設定
+                // スタイル設定
                 tooltipEl.style.opacity = 1;
                 tooltipEl.style.position = 'absolute';
-                tooltipEl.style.left = position.left + window.pageXOffset + tooltipModel.caretX + 'px';
-                console.log(position);
-                console.log(window.pageXOffset);
-                console.log(tooltipModel.caretX);
-                console.log(tooltipEl.style.left);
-                //if (position.left + window.pageXOffset + tooltipModel.caretX + 100 > 800) { 
-                //    tooltipEl.style.left += - 500 };
-                //    console.log(tooltipEl.style.left);
-                tooltipEl.style.top = position.top + window.pageYOffset + tooltipModel.caretY + 'px';
                 tooltipEl.style.fontFamily = tooltipModel._bodyFontFamily;
-                tooltipEl.style.fontSize = tooltipModel.bodyFontSize;
                 tooltipEl.style.fontStyle = tooltipModel._bodyFontStyle;
                 tooltipEl.style.padding = tooltipModel.yPadding + 'px ' + tooltipModel.xPadding + 'px';
                 tooltipEl.style.caretSize = 5 + 'px';
 
-                
-            }
+                if (position.width > 500) {
+
+                    console.log('position.width = ' + position.width + ', position.width > 500');
+                    tooltipEl.style.fontSize = 13 + 'px';
+
+                    if (tooltipModel.caretX < position.width / 2) {
+                        tooltipEl.style.left = position.left + window.pageXOffset + tooltipModel.caretX + 80 + 'px';
+                    }
+                    else {
+                        tooltipEl.style.left = position.left + window.pageXOffset + tooltipModel.caretX - 80 + 'px';
+                    };
+
+                }
+                else {
+                    console.log('position.width = ' + position.width + ', position.width < 500');
+                    tooltipEl.style.fontSize = 11 + 'px';
+                    if (tooltipModel.caretX < position.width / 2) {
+                        tooltipEl.style.left = position.left + window.pageXOffset + tooltipModel.caretX + 20 + 'px';
+                    }
+                    else {
+                        tooltipEl.style.left = position.left + window.pageXOffset + tooltipModel.caretX - 20 + 'px';
+                    }
+                };
+
+                if (tooltipModel.caretY < position.height * 3 / 4) {
+                    tooltipEl.style.top = position.top + window.pageYOffset + tooltipModel.caretY + 'px';
+                }
+                else {
+                    tooltipEl.style.top = position.top + window.pageYOffset + tooltipModel.caretY - 100 + 'px';
+                };
+
+            },
 
         },
 
@@ -153,36 +174,42 @@ var myChart = new Chart(ctx, {
                 }
             }],
             yAxes: [{
+                type: 'logarithmic',
                 scaleLabel: {
                     display: true,
                     fontSize: 14,
                     fontFamily: "Kosugi Maru",
-                    labelString: "年間損益"
+                    labelString: "年間損益（絶対値）"
                 },
                 ticks: {
-                    fontSize: 12,
+                    fontSize: 11,
+                    max: 10000,
+                    min: 1,
                     fontFamily: "Kosugi Maru",
                     callback: function (value, index, values) {
                         return value + '万円'
                     }
                 }
             }]
-        }// 軸設定終わり
+        },// 軸設定終わり
+
+        plugins: {
+            colorschemes: {
+                scheme: 'tableau.Blue20'
+            }
+        }
 
     },// オプション設定終わり
-
-
-
-
-
 });
+
 $(function () {
 
     $(document).on("mouseenter", "#chartjs-tooltip", function (e) {
         $('#chartjs-tooltip').css('opacity', 1);
     });
-
 });
+
+
 
 
 // クリックイベントハンドラー
