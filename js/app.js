@@ -1,18 +1,21 @@
 
 var kabu_datasets =
     [
-        { label: 'itoh3d', data: [{ x: 22.9, y: 484, r: 14.4 }] },
-        { label: 'musou1231', data: [{ x: 5.2, y: 318, r: 22.6 }] },
-        { label: 'MUCHO84928709', data: [{ x: 185.2, y: 715, r: 8.5 }] },
-        { label: 'M31hI', data: [{ x: 6.9, y: 436, r: 23.2 }] },
-        { label: 'noDance_hall', data: [{ x: 4.7, y: 177, r: 17.7 }] },
-        { label: 'btlr6P1YjrlTMjX', data: [{ x: 6, y: 74, r: 10.2 }] },
-        { label: 'goron__chan', data: [{ x: 42, y: 846, r: 15.1 }] },
-        { label: 'sistinavc', data: [{ x: 82.3, y: 2990, r: 23 }] },
-        { label: 'kabusaga', data: [{ x: -2.5, y: 1, r: 1.8 }] },
-        { label: 'HappyHikingDay', data: [{ x: 21, y: 43, r: 4.5 }] },
-
-
+        { label : 'itoh3d' , data : [{ x : 22.9, y: 484, r: 14.4 }]},
+        { label : 'musou1231' , data : [{ x : 5.2, y: 318, r: 22.6 }]},
+        { label : 'MUCHO84928709' , data : [{ x : 123.5, y: 597, r: 9.3 }]},
+        { label : 'M31hI' , data : [{ x : 6.9, y: 436, r: 23.2 }]},
+        { label : 'noDance_hall' , data : [{ x : 4.7, y: 177, r: 17.7 }]},
+        { label : 'btlr6P1YjrlTMjX' , data : [{ x : 6, y: 74, r: 10.2 }]},
+        { label : 'goron__chan' , data : [{ x : 42, y: 846, r: 15.1 }]},
+        { label : 'sistinavc' , data : [{ x : 82.3, y: 2990, r: 23 }]},
+        { label : 'kabusaga' , data : [{ x : -2.5, y: 1, r: 1.8 }]},
+        { label : 'HappyHikingDay' , data : [{ x : 21, y: 43, r: 4.5 }]},
+        { label : 'strade18644883' , data : [{ x : 18, y: 53, r: 5.3 }]},
+        { label : 'k_investment7' , data : [{ x : 6.7, y: 86, r: 10.4 }]},
+        { label : 'NLSK_spoonhobby' , data : [{ x : -0.3, y: 0, r: 2 }]},
+        { label : 'c_macmillan12' , data : [{ x : -25, y: 100, r: 4.9 }]},
+        
     ];
 
 
