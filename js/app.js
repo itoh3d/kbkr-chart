@@ -16,7 +16,8 @@ var kabu_datasets =
         { label : 'NLSK_spoonhobby' , data : [{ x : -0.3, y: 0, r: 2 }]},
         { label : 'c_macmillan12' , data : [{ x : -25, y: 100, r: 4.9 }]},
         { label : 'chun3' , data : [{ x : 2.5, y: 38, r: 11.1 }]},
-        
+        { label : 'ns4Z88PtaQnJRjS' , data : [{ x : 34.4, y: 2270, r: 26.6 }]},
+               
 
 
     ];
