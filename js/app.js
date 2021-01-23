@@ -1,21 +1,22 @@
 
 var kabu_datasets =
     [
-        { label: 'itoh3d', data: [{ x: 26, y: 550, r: 14.6 }] },
-        { label: 'musou1231', data: [{ x: 5.2, y: 318, r: 22.6 }] },
-        { label: 'MUCHO84928709', data: [{ x: 123.5, y: 597, r: 9.3 }] },
-        { label: 'M31hI', data: [{ x: 9.6, y: 603, r: 23.5 }] },
-        { label: 'noDance_hall', data: [{ x: 6.4, y: 240, r: 17.9 }] },
-        { label: 'btlr6P1YjrlTMjX', data: [{ x: 14.7, y: 176, r: 10.5 }] },
-        { label: 'goron__chan', data: [{ x: 39.5, y: 794, r: 14.9 }] },
-        { label: 'sistinavc', data: [{ x: 71, y: 2578, r: 22.2 }] },
-        { label: 'kabusaga', data: [{ x: -2.5, y: 1, r: 1.8 }] },
-        { label: 'HappyHikingDay', data: [{ x: 21, y: 43, r: 4.5 }] },
-        { label: 'strade18644883', data: [{ x: 18, y: 53, r: 5.3 }] },
-        { label: 'k_investment7', data: [{ x: 6.7, y: 86, r: 10.4 }] },
-        { label: 'NLSK_spoonhobby', data: [{ x: -0.3, y: 0, r: 2 }] },
-        { label: 'c_macmillan12', data: [{ x: -25, y: 100, r: 4.9 }] },
-        { label: 'chun3', data: [{ x: 2.5, y: 38, r: 11.1 }] },
+        { label : 'itoh3d' , data : [{ x : 26, y: 550, r: 14.6 }]},
+        { label : 'musou1231' , data : [{ x : 5.2, y: 318, r: 22.6 }]},
+        { label : 'MUCHO84928709' , data : [{ x : 123.5, y: 597, r: 9.3 }]},
+        { label : 'M31hI' , data : [{ x : 9.6, y: 603, r: 23.5 }]},
+        { label : 'noDance_hall' , data : [{ x : 6.4, y: 240, r: 17.9 }]},
+        { label : 'btlr6P1YjrlTMjX' , data : [{ x : 14.7, y: 176, r: 10.5 }]},
+        { label : 'goron__chan' , data : [{ x : 39.5, y: 794, r: 14.9 }]},
+        { label : 'sistinavc' , data : [{ x : 78.5, y: 2844, r: 22.7 }]},
+        { label : 'kabusaga' , data : [{ x : -2.5, y: 1, r: 1.8 }]},
+        { label : 'HappyHikingDay' , data : [{ x : 21, y: 43, r: 4.5 }]},
+        { label : 'strade18644883' , data : [{ x : 18, y: 53, r: 5.3 }]},
+        { label : 'k_investment7' , data : [{ x : 6.7, y: 86, r: 10.4 }]},
+        { label : 'NLSK_spoonhobby' , data : [{ x : -0.3, y: 0, r: 2 }]},
+        { label : 'c_macmillan12' , data : [{ x : -25, y: 100, r: 4.9 }]},
+        { label : 'chun3' , data : [{ x : 2.5, y: 38, r: 11.1 }]},
+        
 
 
     ];
