@@ -1,25 +1,35 @@
+//データセット
+
 var kabu_datasets = [
-    { label: 'itoh3d', data: [{ x: 26, y: 550, r: 14.6 }] },
-    { label: 'musou1231', data: [{ x: 3.9, y: 239, r: 22.5 }] },
-    { label: 'MUCHO84928709', data: [{ x: 123.5, y: 597, r: 9.3 }] },
-    { label: 'M31hI', data: [{ x: 9.6, y: 603, r: 23.5 }] },
-    { label: 'noDance_hall', data: [{ x: 6.4, y: 240, r: 17.9 }] },
-    { label: 'btlr6P1YjrlTMjX', data: [{ x: 14.7, y: 176, r: 10.5 }] },
-    { label: 'goron__chan', data: [{ x: 39.5, y: 794, r: 14.9 }] },
-    { label: 'sistinavc', data: [{ x: 78.5, y: 2844, r: 22.7 }] },
-    { label: 'kabusaga', data: [{ x: -11.5, y: 5, r: 1.7 }] },
-    { label: 'HappyHikingDay', data: [{ x: 21, y: 43, r: 4.5 }] },
-    { label: 'strade18644883', data: [{ x: 18, y: 53, r: 5.3 }] },
-    { label: 'k_investment7', data: [{ x: 6.7, y: 86, r: 10.4 }] },
-    { label: 'NLSK_spoonhobby', data: [{ x: -0.3, y: 0, r: 2 }] },
-    { label: 'c_macmillan12', data: [{ x: -25, y: 100, r: 4.9 }] },
-    { label: 'chun3', data: [{ x: 2.5, y: 38, r: 11.1 }] },
-    { label: 'ns4Z88PtaQnJRjS', data: [{ x: 34.4, y: 2270, r: 26.6 }] },
-    { label: 'bellppy_25', data: [{ x: -10.8, y: 1135, r: 27.3 }] },
-    { label: 'kabu1000', data: [{ x: -3.8, y: 987, r: 44.5 }] },
+    { label : 'MUCHO84928709' , data : [{ x : 123.5, y: 597, r: 9.3 }]},
+    { label : 'sistinavc' , data : [{ x : 78.5, y: 2844, r: 22.7 }]},
+    { label : 'goron__chan' , data : [{ x : 44.1, y: 887, r: 15.2 }]},
+    { label : 'ns4Z88PtaQnJRjS' , data : [{ x : 34.4, y: 2270, r: 26.6 }]},
+    { label : 'itoh3d' , data : [{ x : 22.2, y: 569, r: 15.8 }]},
+    { label : 'HappyHikingDay' , data : [{ x : 21, y: 43, r: 4.5 }]},
+    { label : 'strade18644883' , data : [{ x : 18, y: 53, r: 5.3 }]},
+    { label : 'btlr6P1YjrlTMjX' , data : [{ x : 13.7, y: 165, r: 10.4 }]},
+    { label : 'CELoMwIf3tIV6hl' , data : [{ x : 13.1, y: 166, r: 10.7 }]},
+    { label : 'nikkei225etf' , data : [{ x : 9.2, y: 103, r: 9.9 }]},
+    { label : 'M31hI' , data : [{ x : 8.9, y: 565, r: 23.4 }]},
+    { label : 'ebiuniawabi' , data : [{ x : 8.1, y: 22, r: 4.9 }]},
+    { label : 'k_investment7' , data : [{ x : 6.7, y: 86, r: 10.4 }]},
+    { label : 'noDance_hall' , data : [{ x : 6.4, y: 240, r: 17.9 }]},
+    { label : 'musou1231' , data : [{ x : 3.9, y: 239, r: 22.5 }]},
+    { label : 'dean_dean_den' , data : [{ x : 3.1, y: 21, r: 7.6 }]},
+    { label : 'chun3' , data : [{ x : 2.5, y: 38, r: 11.1 }]},
+    { label : 'NLSK_spoonhobby' , data : [{ x : -0.3, y: 0, r: 2 }]},
+    { label : 'kabu1000' , data : [{ x : -3.8, y: 987, r: 44.5 }]},
+    { label : 'bellppy_25' , data : [{ x : -10.8, y: 1135, r: 27.3 }]},
+    { label : 'kabusaga' , data : [{ x : -11.5, y: 5, r: 1.7 }]},
+    { label : 'c_macmillan12' , data : [{ x : -25, y: 100, r: 4.9 }]},
+    
+    
 
 
 ];
+
+// 平均・中央値用変換
 function getX(Xdata) {
     return Xdata.data[0].x;
 };
@@ -56,8 +66,24 @@ function median(array) {
 };
 
 var kbkr_y_ave = Math.round(kabu_datasets.map(getY).reduce(sum) / kabu_datasets.length);
-var kbkr_y_med = median(kabu_datasets.map(getY));
+var kbkr_y_med = Math.round(median(kabu_datasets.map(getY)));
 
+// リスト用変換
+function forList(basedata) {
+    var id = basedata.label
+    var perform = basedata.data[0].x
+    var profit = basedata.data[0].y;
+    if (basedata.data[0].x < 0) {
+        profit = -basedata.data[0].y;
+    }
+    var stock = Math.round(((2 * basedata.data[0].r) ** 2 * 3.13) / 100) * 100;
+
+    return {"id" : id, "perform" : perform, "profit" : profit, "stock" : stock};
+};
+
+var kabu_datasets_forlist = kabu_datasets.map(forList);
+
+//チャート描画
 var ctx = document.getElementById("myBubbleChart");
 var myChart = new Chart(ctx, {
     type: "bubble",
@@ -150,7 +176,6 @@ var myChart = new Chart(ctx, {
 
                 // `this` はツールチップ全体です
                 var position = this._chart.canvas.getBoundingClientRect();
-                console.log(position);
 
                 // スタイル設定
                 tooltipEl.style.opacity = 1;

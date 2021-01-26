@@ -18,66 +18,62 @@
 
     
     <style>
-
     html body {
         font-family: 'Kosugi Maru', sans-serif;
         background-color: white;
-	}
-	
-    :root {
-        --accent: #AAA;
-        --border-width:  5px ;
     }
-
-
 	canvas {
 		-moz-user-select: none;
 		-webkit-user-select: none;
 		-ms-user-select: none;
 	}
-
+	
 	#chartjs-tooltip {
-				opacity: 1;
-				position: absolute;
-				background: rgba(0, 0, 0, .7);
-				color: white;
-				border-radius: 3px;
-				-webkit-transition: all .1s ease;
-				transition: all .1s ease;
-				pointer-events: auto;
-				-webkit-transform: translate(-50%, 0);
-				transform: translate(-50%, 0);
-				
-}
-
-
+		opacity: 1;
+		position: absolute;
+		background: rgba(0, 0, 0, .7);
+		color: white;
+		border-radius: 3px;
+		-webkit-transition: all .1s ease;
+		transition: all .1s ease;
+		pointer-events: auto;
+		-webkit-transform: translate(-50%, 0);
+		transform: translate(-50%, 0);
+	}
 	.chartjs-tooltip-key {
 		display: inline-block;
 		width: 10px;
 		height: 10px;
 		margin-right: 10px;
 	}
+	
+	.message {
+		margin-bottom: 20px;
+		vertical-align: top;
+	}
+
+	#kbkr-table{
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+
+	
 
 </style>
 
-
-<link rel="stylesheet" href="https://itoh3d.github.io/kbkr-chart/css/main.css">
-
+<link rel="stylesheet" href="https://itoh3d.github.io/kbkr-chart/css/main.css?ver=0.07">
 
 
+<link rel="stylesheet" href="https://itoh3d.github.io/kbkr-chart/css/tabulator_simple.css">
 
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kosugi%20Maru">
 
 
-
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"	crossorigin="anonymous">
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-
     
 
 
@@ -148,9 +144,8 @@
     </div>
 </main>
 
-
-        
-    </body>
-
+    <footer>
+        (c) itoh3d
+    </footer>
+</body>
 </html>
-

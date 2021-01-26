@@ -18,66 +18,62 @@
 
     
     <style>
-
     html body {
         font-family: 'Kosugi Maru', sans-serif;
         background-color: white;
-	}
-	
-    :root {
-        --accent: #AAA;
-        --border-width:  5px ;
     }
-
-
 	canvas {
 		-moz-user-select: none;
 		-webkit-user-select: none;
 		-ms-user-select: none;
 	}
-
+	
 	#chartjs-tooltip {
-				opacity: 1;
-				position: absolute;
-				background: rgba(0, 0, 0, .7);
-				color: white;
-				border-radius: 3px;
-				-webkit-transition: all .1s ease;
-				transition: all .1s ease;
-				pointer-events: auto;
-				-webkit-transform: translate(-50%, 0);
-				transform: translate(-50%, 0);
-				
-}
-
-
+		opacity: 1;
+		position: absolute;
+		background: rgba(0, 0, 0, .7);
+		color: white;
+		border-radius: 3px;
+		-webkit-transition: all .1s ease;
+		transition: all .1s ease;
+		pointer-events: auto;
+		-webkit-transform: translate(-50%, 0);
+		transform: translate(-50%, 0);
+	}
 	.chartjs-tooltip-key {
 		display: inline-block;
 		width: 10px;
 		height: 10px;
 		margin-right: 10px;
 	}
+	
+	.message {
+		margin-bottom: 20px;
+		vertical-align: top;
+	}
+
+	#kbkr-table{
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+
+	
 
 </style>
 
-
-<link rel="stylesheet" href="https://itoh3d.github.io/kbkr-chart/css/main.css">
-
+<link rel="stylesheet" href="https://itoh3d.github.io/kbkr-chart/css/main.css?ver=0.07">
 
 
+<link rel="stylesheet" href="https://itoh3d.github.io/kbkr-chart/css/tabulator_simple.css">
 
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kosugi%20Maru">
 
 
-
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"	crossorigin="anonymous">
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-
     
 
 
@@ -145,7 +141,7 @@
 
     <div>
         <h2>説明</h2>
-        <h5>v0.06</h5>
+        <h5>v0.07</h5>
         
 
     </div>
@@ -160,7 +156,7 @@
 <li>もしくは、ツイート内に下記3点を記入してください。
 <ul>
 <li>ハッシュタグ　<a href="https://twitter.com/hashtag/%E6%A0%AA%E3%82%AF%E3%83%A9%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88">#株クラチャート</a></li>
-<li>年初来パフォ〇〇%　（算出方法は何でも可。%を消さないこと）</li>
+<li>年初来パフォ〇〇%　（%を消さないこと）</li>
 <li>総資産〇〇万円　（万円もしくは円を消さないこと）</li>
 </ul>
 </li>
@@ -174,19 +170,38 @@
 <li>年間損益は自動で計算されます。</li>
 <li>年間損益は損失でも、正の値として表現します（絶対値表示）。</li>
 </ul>
-<h3 id="免責">免責</h3>
+<h3 id="利用規約">利用規約</h3>
+<h4 id="免責">免責</h4>
 <ul>
-<li>本サイトのデータに正確性、真実性などは全く無いです。</li>
-<li>雰囲気を楽しんで下さい。</li>
-<li>ご意見・ご要望はリプ・DMなどでご連絡下さい。</li>
+<li>当サイトは @itoh3d が私的使用を目的として、引用等著作権法上認められた行為の範囲内で公開情報を編集したものです。</li>
+<li>利用者が当サイトの情報を用いて行う一切の行為について、何ら責任を負いません。</li>
+<li>当サイトのリンク先のサイトの内容について、また、利用者がそれらの情報を用いて行う一切の行為について、何ら責任を負いません。</li>
+<li>本サイトのデータに正確性、真実性などは全くありません。</li>
+<li>Twitter及び各サイトに公開されている情報は、各サイトの利用規約に従います。</li>
+<li>運用成績の削除要望などあれば、速やかに対応致します。</li>
+<li>その他、ご意見・ご要望等あれば、お気軽にご連絡ください。</li>
+</ul>
+<h4 id="当サイトへのリンクについて">当サイトへのリンクについて</h4>
+<ul>
+<li>当サイトへリンクを設定する場合は、申請は不要ですが、以下の事項を遵守願います。</li>
+<li>当ホームページが他のホームページの一部として表示されるようなリンクの設定はせず、必ず新しいウインドウが開かれるようにリンクを設定願います。</li>
+<li>以下のサイトからのリンク設定は、お断りします。
+<ul>
+<li>第三者を誹謗中傷し、あるいは信用の失墜を目的とする内容を含んだサイト</li>
+<li>知的財産権（著作権、商標権等）、プライバシー、肖像権等の権利を侵害又は侵害するおそれのあるサイト</li>
+<li>反社会的内容（アダルトコンテンツ等）が掲載されたサイト</li>
+<li>法令その他公序良俗に反する内容を含んだサイト</li>
+<li>当サイトにおいて問題があると判断したサイト</li>
+</ul>
+</li>
+<li>リンクの設定後 @itoh3d までリプ・DMをお送り頂けると喜びます。</li>
 </ul>
 </div>
 
 </main>
 
-
-        
-    </body>
-
+    <footer>
+        (c) itoh3d
+    </footer>
+</body>
 </html>
-

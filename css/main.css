@@ -1,7 +1,5 @@
-
-
 html, body {
-    height: 100%;
+    
 }
 
 body {
@@ -9,6 +7,7 @@ body {
     display: flex;
     text-align: center;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
@@ -16,46 +15,17 @@ main {
     padding: 5px;
     flex: 1 0 auto;
     max-width: 95%;
-    max-height: 100%;
-    
 }
-
 
 img {
     max-width: 100%;
 }
-
-/* Homepage */
-
-.intro {
-    transform: translateY(22vh);
-}
-
-.intro > h1 {
-    color: #212121;
-    font-size: 12vh;
-}
-
-.intro > h2 {
-    color: #757575;
-    font-size: 3vmin;
-}
-
-/* Page content */
-
-.content {
-    padding-top: 10px;
-}
-
-/* Profile picture */
 
 .profile {
     width: 10vh;
     height: 10vh;
     border-radius: 50%;
 }
-
-/* Colored links */
 
 a:link, a:visited {
     color: #64b9ff;
@@ -66,16 +36,8 @@ a.icon:hover {
 }
 
 a:hover {
-    color: var(--accent) !important;
+    color: #64b9ff;
 }
-
-/* Copyright message */
-
-.copyright {
-    margin: 10px 0;
-}
-
-/* Paginator */
 
 .pages {
     padding: 15px 0;
@@ -85,8 +47,6 @@ a:hover {
     padding: 0 15px;
 }
 
-/* List item for posts/projects */
-
 .item {
     padding: 10px 0;
 }
@@ -95,19 +55,8 @@ a:hover {
     background-color: var(--accent);
 }
 
-/* Navigation icons */
-
 .navbar-icon {
     font-size: 125%;
     display: inline-block !important;
 }
 
-/* Colored borders at top/bottom of page */
-
-.navbar.navbar-default {
-    border-top: var(--border-width) solid var(--accent);
-}
-
-footer {
-    border-bottom: var(--border-width) solid var(--accent);
-}
