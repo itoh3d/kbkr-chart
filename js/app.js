@@ -2,10 +2,10 @@
 
 var kabu_datasets = [
     { label : 'MUCHO84928709' , data : [{ x : 123.5, y: 597, r: 9.3 }]},
-    { label : 'sistinavc' , data : [{ x : 78.5, y: 2844, r: 22.7 }]},
+    { label : 'sistinavc' , data : [{ x : 85.5, y: 3106, r: 23.2 }]},
     { label : 'goron__chan' , data : [{ x : 44.1, y: 887, r: 15.2 }]},
     { label : 'ns4Z88PtaQnJRjS' , data : [{ x : 34.4, y: 2270, r: 26.6 }]},
-    { label : 'itoh3d' , data : [{ x : 22.2, y: 569, r: 15.8 }]},
+    { label : 'itoh3d' , data : [{ x : 20.6, y: 528, r: 15.7 }]},
     { label : 'HappyHikingDay' , data : [{ x : 21, y: 43, r: 4.5 }]},
     { label : 'strade18644883' , data : [{ x : 18, y: 53, r: 5.3 }]},
     { label : 'btlr6P1YjrlTMjX' , data : [{ x : 13.7, y: 165, r: 10.4 }]},
