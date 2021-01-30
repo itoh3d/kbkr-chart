@@ -1,6 +1,9 @@
 //データセット
 
 var kabu_datasets = [
+
+
+    
     { label : 'sistinavc' , data : [{ x : 74.4, y: 2703, r: 22.5 }]},
     { label : 'ns4Z88PtaQnJRjS' , data : [{ x : 34.4, y: 2270, r: 26.6 }]},
     { label : 'mogmoggaboo' , data : [{ x : 32.3, y: 85, r: 5.3 }]},
@@ -12,13 +15,15 @@ var kabu_datasets = [
     { label : 'pav_kabu' , data : [{ x : 11, y: 10, r: 2.8 }]},
     { label : 'nikkei225etf' , data : [{ x : 9.2, y: 87, r: 9.1 }]},
     { label : 'M31hI' , data : [{ x : 8.9, y: 563, r: 23.4 }]},
-    { label : 'itoh3d' , data : [{ x : 8.8, y: 226, r: 14.9 }]},
+    { label : 'itoh3d' , data : [{ x : 8.8, y: 229, r: 15 }]},
     { label : 'youtuba14' , data : [{ x : 8.5, y: 8, r: 2.8 }]},
     { label : 'ebiuniawabi' , data : [{ x : 8.1, y: 22, r: 4.9 }]},
     { label : 'MUCHO84928709' , data : [{ x : 7.8, y: 38, r: 6.4 }]},
     { label : 'CELoMwIf3tIV6hl' , data : [{ x : 7.6, y: 96, r: 10.4 }]},
     { label : 'noDance_hall' , data : [{ x : 6.4, y: 242, r: 17.9 }]},
     { label : 'highmix' , data : [{ x : 6.1, y: 6, r: 2.8 }]},
+    { label : 'syusendokoala' , data : [{ x : 6.1, y: 6, r: 2.8 }]},
+    { label : 'ronaldread_blog' , data : [{ x : 5.8, y: 143, r: 14.4 }]},
     { label : 'Crescent5225675' , data : [{ x : 5.6, y: 56, r: 9.2 }]},
     { label : 'k_investment7' , data : [{ x : 5.2, y: 67, r: 10.4 }]},
     { label : 'toushi_benjamin' , data : [{ x : 4.8, y: 634, r: 33.2 }]},
@@ -36,7 +41,9 @@ var kabu_datasets = [
     { label : 'ahoinvestor' , data : [{ x : -0.3, y: 0, r: 2.8 }]},
     { label : 'NLSK_spoonhobby' , data : [{ x : -0.3, y: 0, r: 2 }]},
     { label : 'takakatsutoshi3' , data : [{ x : -0.5, y: 1, r: 2.8 }]},
+    { label : 'momokurin' , data : [{ x : -0.8, y: 1, r: 2.8 }]},
     { label : 'dean_dean_den' , data : [{ x : -1.8, y: 13, r: 7.4 }]},
+    { label : 'kai83660' , data : [{ x : -1.9, y: 2, r: 2.8 }]},
     { label : '2004Aki' , data : [{ x : -2.1, y: 2, r: 2.8 }]},
     { label : 'takefund' , data : [{ x : -2.7, y: 3, r: 2.8 }]},
     { label : 'goseienarigato' , data : [{ x : -3, y: 3, r: 2.8 }]},
@@ -49,6 +56,10 @@ var kabu_datasets = [
     { label : 'kabusaga' , data : [{ x : -11.5, y: 5, r: 1.7 }]},
     { label : 'trade_noname' , data : [{ x : -21.8, y: 28, r: 2.8 }]},
     { label : 'c_macmillan12' , data : [{ x : -25, y: 100, r: 4.9 }]},
+
+
+
+
 ];
 
 // 平均・中央値用変換
