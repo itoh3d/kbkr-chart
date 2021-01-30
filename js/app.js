@@ -1,31 +1,52 @@
 //データセット
 
 var kabu_datasets = [
-    { label : 'MUCHO84928709' , data : [{ x : 123.5, y: 597, r: 9.3 }]},
     { label : 'sistinavc' , data : [{ x : 85.5, y: 3106, r: 23.2 }]},
     { label : 'goron__chan' , data : [{ x : 44.1, y: 887, r: 15.2 }]},
     { label : 'ns4Z88PtaQnJRjS' , data : [{ x : 34.4, y: 2270, r: 26.6 }]},
-    { label : 'itoh3d' , data : [{ x : 20.6, y: 528, r: 15.7 }]},
+    { label : 'mogmoggaboo' , data : [{ x : 32.3, y: 85, r: 5.3 }]},
+    { label : 'pyamarz' , data : [{ x : 23, y: 19, r: 2.8 }]},
     { label : 'HappyHikingDay' , data : [{ x : 21, y: 43, r: 4.5 }]},
-    { label : 'strade18644883' , data : [{ x : 18, y: 53, r: 5.3 }]},
     { label : 'btlr6P1YjrlTMjX' , data : [{ x : 13.7, y: 165, r: 10.4 }]},
     { label : 'CELoMwIf3tIV6hl' , data : [{ x : 13.1, y: 166, r: 10.7 }]},
+    { label : 'strade18644883' , data : [{ x : 12, y: 35, r: 5.1 }]},
+    { label : 'pav_kabu' , data : [{ x : 11, y: 10, r: 2.8 }]},
     { label : 'nikkei225etf' , data : [{ x : 9.2, y: 103, r: 9.9 }]},
     { label : 'M31hI' , data : [{ x : 8.9, y: 565, r: 23.4 }]},
+    { label : 'itoh3d' , data : [{ x : 8.8, y: 224, r: 14.9 }]},
+    { label : 'youtuba14' , data : [{ x : 8.5, y: 8, r: 2.8 }]},
     { label : 'ebiuniawabi' , data : [{ x : 8.1, y: 22, r: 4.9 }]},
-    { label : 'k_investment7' , data : [{ x : 6.7, y: 86, r: 10.4 }]},
+    { label : 'MUCHO84928709' , data : [{ x : 7.8, y: 38, r: 6.4 }]},
     { label : 'noDance_hall' , data : [{ x : 6.4, y: 240, r: 17.9 }]},
+    { label : 'highmix' , data : [{ x : 6.1, y: 6, r: 2.8 }]},
+    { label : 'Crescent5225675' , data : [{ x : 5.6, y: 5, r: 2.8 }]},
+    { label : 'k_investment7' , data : [{ x : 5.2, y: 67, r: 10.4 }]},
+    { label : 'toushi_benjamin' , data : [{ x : 4.8, y: 634, r: 33.2 }]},
+    { label : 'micchimicchi14' , data : [{ x : 4.6, y: 4, r: 2.8 }]},
     { label : 'musou1231' , data : [{ x : 3.9, y: 239, r: 22.5 }]},
     { label : 'dean_dean_den' , data : [{ x : 3.1, y: 21, r: 7.6 }]},
+    { label : 'kaburiber2' , data : [{ x : 2.5, y: 2, r: 2.8 }]},
     { label : 'chun3' , data : [{ x : 2.5, y: 38, r: 11.1 }]},
+    { label : 'Sasukenokabu' , data : [{ x : 2, y: 24, r: 9.8 }]},
+    { label : 'TkxQMsTYUZQlFlN' , data : [{ x : 1.7, y: 2, r: 2.8 }]},
+    { label : 'castlefrom0' , data : [{ x : 1.7, y: 2, r: 2.8 }]},
+    { label : 'YGkoPanda' , data : [{ x : 0.3, y: 0, r: 2.8 }]},
+    { label : 'futa_kabu' , data : [{ x : 0.1, y: 0, r: 2.8 }]},
+    { label : 'ahoinvestor' , data : [{ x : -0.3, y: 0, r: 2.8 }]},
     { label : 'NLSK_spoonhobby' , data : [{ x : -0.3, y: 0, r: 2 }]},
+    { label : 'takakatsutoshi3' , data : [{ x : -0.5, y: 0, r: 2.8 }]},
+    { label : '2004Aki' , data : [{ x : -2.1, y: 2, r: 2.8 }]},
+    { label : 'takefund' , data : [{ x : -2.7, y: 3, r: 2.8 }]},
+    { label : 'goseienarigato' , data : [{ x : -3, y: 3, r: 2.8 }]},
+    { label : 'makocha_p' , data : [{ x : -3, y: 3, r: 2.8 }]},
     { label : 'kabu1000' , data : [{ x : -3.8, y: 987, r: 44.5 }]},
+    { label : 'ACdc97757716' , data : [{ x : -4.2, y: 4, r: 2.8 }]},
     { label : 'bellppy_25' , data : [{ x : -10.8, y: 1135, r: 27.3 }]},
+    { label : 'Mitus_t00' , data : [{ x : -11.1, y: 12, r: 2.8 }]},
     { label : 'kabusaga' , data : [{ x : -11.5, y: 5, r: 1.7 }]},
+    { label : 'trade_noname' , data : [{ x : -21.8, y: 28, r: 2.8 }]},
     { label : 'c_macmillan12' , data : [{ x : -25, y: 100, r: 4.9 }]},
-    
-    
-
+        
 
 ];
 
@@ -76,7 +97,7 @@ function forList(basedata) {
     if (basedata.data[0].x < 0) {
         profit = -basedata.data[0].y;
     }
-    var stock = Math.round(((2 * basedata.data[0].r) ** 2 * 3.13) / 100) * 100;
+    var stock = Math.ceil(((2 * basedata.data[0].r) ** 2 * 3.13) / 100) * 100;
 
     return {"id" : id, "perform" : perform, "profit" : profit, "stock" : stock};
 };
@@ -155,18 +176,19 @@ var myChart = new Chart(ctx, {
                         style += "; border-width: 2px";
                         var span = '<span class="chartjs-tooltip-key" style="' + style + '"></span>';
                         innerHtml += "<tr><td>" + '<a href="https://twitter.com/' + body_content[0] + '/">' + body_content[0] + "</a>" + "</td></tr>";
-                        innerHtml += "<tr><td>" + "年初来パフォ：" + body_content[1][0] + " %</td></tr>";
+                        if (body_content[1][0] >= 0) {
+                            innerHtml += "<tr><td>" + "年初来パフォ：+" + body_content[1][0] + " %</td></tr>";
+                        } else {
+                            innerHtml += "<tr><td>" + "年初来パフォ：" + body_content[1][0] + " %</td></tr>";
+                        }
+                        
                         if (body_content[1][0] >= 0) {
                             innerHtml += "<tr><td>" + "年間損益：+" + body_content[1][1] + " 万円</td></tr>";
                         } else {
                             innerHtml += "<tr><td>" + "年間損益：-" + body_content[1][1] + " 万円</td></tr>";
                         }
-                        var shisan = Math.round(((2 * body_content[1][2]) ** 2 * 3.13) / 100) * 100;
-                        if (shisan == 0) {
-                            innerHtml += "<tr><td>" + "総資産：～ 100 万円</td></tr>";
-                        } else {
-                            innerHtml += "<tr><td>" + "総資産：" + shisan + " 万円+</td></tr>";
-                        }
+                        var shisan = Math.ceil(((2 * body_content[1][2]) ** 2 * 3.13) / 100) * 100;
+                            innerHtml += "<tr><td>" + "総資産：~" + shisan + " 万円</td></tr>";
                     });
                     innerHtml += "</tbody>";
 
