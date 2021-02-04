@@ -1,21 +1,21 @@
 //データセット
 
 var kabu_datasets = [
-    { label : 'sistinavc' , data : [{ x : 74, y: 2703, r: 22.5 }]},
-    { label : 'futsuubito' , data : [{ x : 65.9, y: 906, r: 13.5 }]},
+    { label : 'futsuubito' , data : [{ x : 81.4, y: 1119, r: 14.1 }]},
+    { label : 'sistinavc' , data : [{ x : 78, y: 2841, r: 22.7 }]},
     { label : 'reuse_theta' , data : [{ x : 55.9, y: 36, r: 2.8 }]},
     { label : 'mogmoggaboo' , data : [{ x : 32.3, y: 81, r: 5.1 }]},
     { label : 's13776387' , data : [{ x : 28, y: 22, r: 2.8 }]},
     { label : 'buraihhh' , data : [{ x : 25.6, y: 131, r: 7.1 }]},
     { label : 'investsprinter' , data : [{ x : 24.7, y: 20, r: 2.8 }]},
     { label : 'toushikarasu' , data : [{ x : 19, y: 107, r: 7.3 }]},
-    { label : 'itoh3d' , data : [{ x : 14.4, y: 365, r: 15.2 }]},
-    { label : 'Quanta1918' , data : [{ x : 14.1, y: 12, r: 2.8 }]},
+    { label : 'Quanta1918' , data : [{ x : 15.8, y: 14, r: 2.8 }]},
+    { label : 'itoh3d' , data : [{ x : 15.7, y: 398, r: 15.3 }]},
     { label : '000kani000' , data : [{ x : 12.7, y: 11, r: 2.8 }]},
     { label : 'strade18644883' , data : [{ x : 12, y: 35, r: 5.1 }]},
     { label : 'pav_kabu' , data : [{ x : 11, y: 10, r: 2.8 }]},
     { label : 'ns4Z88PtaQnJRjS' , data : [{ x : 9.9, y: 651, r: 24 }]},
-    { label : 'MUCHO84928709' , data : [{ x : 7.8, y: 34, r: 6.1 }]},
+    { label : 'MUCHO84928709' , data : [{ x : 7.8, y: 38, r: 6.4 }]},
     { label : 'Mr68818662' , data : [{ x : 7.8, y: 31, r: 5.9 }]},
     { label : 'syusendokoala' , data : [{ x : 6.1, y: 6, r: 2.8 }]},
     { label : 'highmix' , data : [{ x : 6.1, y: 6, r: 2.8 }]},
@@ -29,11 +29,11 @@ var kabu_datasets = [
     { label : 'AyMkabu' , data : [{ x : 4.3, y: 21, r: 6.4 }]},
     { label : 'josefire8' , data : [{ x : 3.6, y: 3, r: 2.8 }]},
     { label : 'rabbit_invest' , data : [{ x : 3.5, y: 3, r: 2.8 }]},
-    { label : 'trader_hashang' , data : [{ x : 3.2, y: 1130, r: 53.9 }]},
-    { label : 'ABE_Sato' , data : [{ x : 2.7, y: 3, r: 2.8 }]},
+    { label : 'ABE_Sato' , data : [{ x : 3.1, y: 3, r: 2.8 }]},
     { label : 'kaburiber2' , data : [{ x : 2.5, y: 2, r: 2.8 }]},
     { label : 'icetakashi2020' , data : [{ x : 2.3, y: 2, r: 2.8 }]},
     { label : 'yasakabu' , data : [{ x : 2.2, y: 2, r: 2.8 }]},
+    { label : 'trader_hashang' , data : [{ x : 1.9, y: 671, r: 53.5 }]},
     { label : 'posicx' , data : [{ x : 1.9, y: 30, r: 11.2 }]},
     { label : '100_million_yen' , data : [{ x : 1.7, y: 2, r: 2.8 }]},
     { label : 'A77777K' , data : [{ x : 1.7, y: 2, r: 2.8 }]},
@@ -67,9 +67,26 @@ var kabu_datasets = [
     { label : 'sato198358' , data : [{ x : -5.6, y: 6, r: 2.8 }]},
     { label : 'aaoottoolife' , data : [{ x : -10.7, y: 12, r: 2.8 }]},
     { label : 'imuvill' , data : [{ x : -12.7, y: 1455, r: 28.2 }]},
-
-
 ];
+
+function getJSON() {
+    var req = new XMLHttpRequest(); // XMLHttpRequest オブジェクトを生成する
+    req.onreadystatechange = function () { // XMLHttpRequest オブジェクトの状態が変化した際に呼び出されるイベントハンドラ
+        if (req.readyState == 4 && req.status == 200) { // サーバーからのレスポンスが完了し、かつ、通信が正常に終了した場合
+
+            var data = JSON.parse(req.responseText); // 取得した JSON ファイルの中身を変数へ格納
+            var len = data.length; // JSON のデータ数を取得
+
+            // JSON のデータ数分処理
+            for (var i = 0; i < len; i++) {
+                console.log("id: " + data[i].id + ", name: " + data[i].name);
+            }
+
+        }
+    };
+    req.open("GET", "data.json", false); // HTTPメソッドとアクセスするサーバーのURLを指定
+    req.send(null); // 実際にサーバーへリクエストを送信
+}
 
 // 平均・中央値用変換
 function getX(Xdata) {
@@ -120,7 +137,7 @@ function forList(basedata) {
     }
     var stock = Math.ceil(((2 * basedata.data[0].r) ** 2 * 3.13) / 100) * 100;
 
-    return {"id" : id, "perform" : perform, "profit" : profit, "stock" : stock};
+    return { "id": id, "perform": perform, "profit": profit, "stock": stock };
 };
 
 var kabu_datasets_forlist = kabu_datasets.map(forList);
@@ -202,14 +219,14 @@ var myChart = new Chart(ctx, {
                         } else {
                             innerHtml += "<tr><td>" + "年初来パフォ：" + body_content[1][0] + " %</td></tr>";
                         }
-                        
+
                         if (body_content[1][0] >= 0) {
                             innerHtml += "<tr><td>" + "年間損益：+" + body_content[1][1] + " 万円</td></tr>";
                         } else {
                             innerHtml += "<tr><td>" + "年間損益：-" + body_content[1][1] + " 万円</td></tr>";
                         }
                         var shisan = Math.ceil(((2 * body_content[1][2]) ** 2 * 3.13) / 100) * 100;
-                            innerHtml += "<tr><td>" + "総資産：~" + shisan + " 万円</td></tr>";
+                        innerHtml += "<tr><td>" + "総資産：~" + shisan + " 万円</td></tr>";
                     });
                     innerHtml += "</tbody>";
 
