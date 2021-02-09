@@ -1,68 +1,826 @@
 [
-    { "label" : "futsuubito" , "data" : [{ "x" : 81.4, "y": 1119, "r": 14.1 }]},
-    { label : 'sistinavc' , data : [{ x : 78, y: 2841, r: 22.7 }]},
-    { label : 'reuse_theta' , data : [{ x : 55.9, y: 36, r: 2.8 }]},
-    { label : 'mogmoggaboo' , data : [{ x : 32.3, y: 81, r: 5.1 }]},
-    { label : 's13776387' , data : [{ x : 28, y: 22, r: 2.8 }]},
-    { label : 'buraihhh' , data : [{ x : 25.6, y: 131, r: 7.1 }]},
-    { label : 'investsprinter' , data : [{ x : 24.7, y: 20, r: 2.8 }]},
-    { label : 'toushikarasu' , data : [{ x : 19, y: 107, r: 7.3 }]},
-    { label : 'Quanta1918' , data : [{ x : 15.8, y: 14, r: 2.8 }]},
-    { label : 'itoh3d' , data : [{ x : 15.7, y: 398, r: 15.3 }]},
-    { label : '000kani000' , data : [{ x : 12.7, y: 11, r: 2.8 }]},
-    { label : 'strade18644883' , data : [{ x : 12, y: 35, r: 5.1 }]},
-    { label : 'pav_kabu' , data : [{ x : 11, y: 10, r: 2.8 }]},
-    { label : 'ns4Z88PtaQnJRjS' , data : [{ x : 9.9, y: 651, r: 24 }]},
-    { label : 'MUCHO84928709' , data : [{ x : 7.8, y: 38, r: 6.4 }]},
-    { label : 'Mr68818662' , data : [{ x : 7.8, y: 31, r: 5.9 }]},
-    { label : 'syusendokoala' , data : [{ x : 6.1, y: 6, r: 2.8 }]},
-    { label : 'highmix' , data : [{ x : 6.1, y: 6, r: 2.8 }]},
-    { label : 'Crescent5225675' , data : [{ x : 5.9, y: 59, r: 9.2 }]},
-    { label : '_sakai_029' , data : [{ x : 5.4, y: 125, r: 14 }]},
-    { label : 'Mashiyama' , data : [{ x : 5.3, y: 5, r: 2.8 }]},
-    { label : 'k_investment7' , data : [{ x : 5.2, y: 67, r: 10.4 }]},
-    { label : 'saki_in' , data : [{ x : 5, y: 557, r: 30.4 }]},
-    { label : 'musou1231' , data : [{ x : 4.7, y: 288, r: 22.6 }]},
-    { label : 'micchimicchi14' , data : [{ x : 4.6, y: 4, r: 2.8 }]},
-    { label : 'AyMkabu' , data : [{ x : 4.3, y: 21, r: 6.4 }]},
-    { label : 'josefire8' , data : [{ x : 3.6, y: 3, r: 2.8 }]},
-    { label : 'rabbit_invest' , data : [{ x : 3.5, y: 3, r: 2.8 }]},
-    { label : 'ABE_Sato' , data : [{ x : 3.1, y: 3, r: 2.8 }]},
-    { label : 'kaburiber2' , data : [{ x : 2.5, y: 2, r: 2.8 }]},
-    { label : 'icetakashi2020' , data : [{ x : 2.3, y: 2, r: 2.8 }]},
-    { label : 'yasakabu' , data : [{ x : 2.2, y: 2, r: 2.8 }]},
-    { label : 'trader_hashang' , data : [{ x : 1.9, y: 671, r: 53.5 }]},
-    { label : 'posicx' , data : [{ x : 1.9, y: 30, r: 11.2 }]},
-    { label : '100_million_yen' , data : [{ x : 1.7, y: 2, r: 2.8 }]},
-    { label : 'A77777K' , data : [{ x : 1.7, y: 2, r: 2.8 }]},
-    { label : 'TkxQMsTYUZQlFlN' , data : [{ x : 1.7, y: 2, r: 2.8 }]},
-    { label : 'castlefrom0' , data : [{ x : 1.7, y: 2, r: 2.8 }]},
-    { label : 'free_worker_jp' , data : [{ x : 1.1, y: 15, r: 10.5 }]},
-    { label : 'syou36_investor' , data : [{ x : 1, y: 1, r: 2.8 }]},
-    { label : 'momokurin' , data : [{ x : 1, y: 1, r: 2.8 }]},
-    { label : 'ok94098' , data : [{ x : 0.8, y: 1, r: 2.8 }]},
-    { label : 'chun3' , data : [{ x : 0.4, y: 6, r: 11 }]},
-    { label : 'YGkoPanda' , data : [{ x : 0.3, y: 0, r: 2.8 }]},
-    { label : 'futa_kabu' , data : [{ x : 0.1, y: 0, r: 2.8 }]},
-    { label : 'KabuFactory' , data : [{ x : -0.2, y: 0, r: 2.8 }]},
-    { label : 'ahoinvestor' , data : [{ x : -0.3, y: 0, r: 2.8 }]},
-    { label : 'ityuuSan' , data : [{ x : -0.3, y: 0, r: 2.8 }]},
-    { label : 'kuratyan625' , data : [{ x : -0.4, y: 0, r: 2.8 }]},
-    { label : 'takakatsutoshi3' , data : [{ x : -0.5, y: 0, r: 2.8 }]},
-    { label : 'ika_toushi' , data : [{ x : -0.9, y: 1, r: 2.8 }]},
-    { label : 'inves_engineer' , data : [{ x : -1.6, y: 5, r: 4.9 }]},
-    { label : 'RedCarrot4' , data : [{ x : -1.7, y: 2, r: 2.8 }]},
-    { label : 'kai83660' , data : [{ x : -1.9, y: 2, r: 2.8 }]},
-    { label : '2004Aki' , data : [{ x : -2.1, y: 2, r: 2.8 }]},
-    { label : 'takefund' , data : [{ x : -2.7, y: 3, r: 2.8 }]},
-    { label : 'nigatsudo15' , data : [{ x : -2.9, y: 3, r: 2.8 }]},
-    { label : 'Momonga262' , data : [{ x : -3, y: 3, r: 2.8 }]},
-    { label : 'MrKabumania' , data : [{ x : -3.8, y: 4, r: 2.8 }]},
-    { label : 'nobussann' , data : [{ x : -4, y: 4, r: 2.8 }]},
-    { label : 'MrM1101' , data : [{ x : -4, y: 4, r: 2.8 }]},
-    { label : 'ACdc97757716' , data : [{ x : -4.2, y: 4, r: 2.8 }]},
-    { label : 'yuukabukabu' , data : [{ x : -5.4, y: 119, r: 12.9 }]},
-    { label : 'sato198358' , data : [{ x : -5.6, y: 6, r: 2.8 }]},
-    { label : 'aaoottoolife' , data : [{ x : -10.7, y: 12, r: 2.8 }]},
-    { label : 'imuvill' , data : [{ x : -12.7, y: 1455, r: 28.2 }]}
+    {
+        "id": "@2525mementomori",
+        "name": "もてのり",
+        "date": "02/06",
+        "ytd": "225.13",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@fugo_hahahablog",
+        "name": "フーゴ",
+        "date": "02/06",
+        "ytd": "107.1",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@MrRabbit9119",
+        "name": "ミスター・ラビット",
+        "date": "02/06",
+        "ytd": "103.4",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@duck_stock",
+        "name": "Duck of t",
+        "date": "02/06",
+        "ytd": "88",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@sistinavc",
+        "name": "びっくる",
+        "date": "02/04",
+        "ytd": "78",
+        "assets": "6484",
+        "pl": "2841"
+    },
+    {
+        "id": "@futsuubito",
+        "name": "ふつうびと",
+        "date": "02/06",
+        "ytd": "76.9",
+        "assets": "2431.0404664000002",
+        "pl": "1057"
+    },
+    {
+        "id": "@reuse_theta",
+        "name": "シータ",
+        "date": "01/31",
+        "ytd": "55.92",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@FAA_X64",
+        "name": "こざま",
+        "date": "02/06",
+        "ytd": "41",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@so19715552",
+        "name": "sou",
+        "date": "02/06",
+        "ytd": "40",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@mogmoggaboo",
+        "name": "もぐもぐがぶぅ",
+        "date": "01/30",
+        "ytd": "32.3",
+        "assets": "330.75",
+        "pl": "81"
+    },
+    {
+        "id": "@RokuSQ_All",
+        "name": "みね 米国株大好き",
+        "date": "02/06",
+        "ytd": "31",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@fujitaxian",
+        "name": "フジタクスゼイアン",
+        "date": "02/06",
+        "ytd": "30",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@s13776387",
+        "name": "YBS",
+        "date": "01/31",
+        "ytd": "28",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@_sakai_029",
+        "name": "社長さかまさ AI",
+        "date": "02/05",
+        "ytd": "27.3",
+        "assets": "2957.179",
+        "pl": "634"
+    },
+    {
+        "id": "@buraihhh",
+        "name": "Shin",
+        "date": "01/27",
+        "ytd": "25.6",
+        "assets": "641.816",
+        "pl": "131"
+    },
+    {
+        "id": "@pav_kabu",
+        "name": "赤カブ",
+        "date": "02/05",
+        "ytd": "25.1",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@MUCHO84928709",
+        "name": "Hey MUCHO",
+        "date": "02/06",
+        "ytd": "24.97",
+        "assets": "602.3554",
+        "pl": "120"
+    },
+    {
+        "id": "@investsprinter",
+        "name": "スプリンター",
+        "date": "01/30",
+        "ytd": "24.67",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@akinorimuraoka",
+        "name": "akinori©︎",
+        "date": "02/06",
+        "ytd": "21.53",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@takede3",
+        "name": "ささどん",
+        "date": "02/05",
+        "ytd": "19.7",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@000kani000",
+        "name": "かに",
+        "date": "02/05",
+        "ytd": "19.5",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@hajimeteosun",
+        "name": "おすん",
+        "date": "02/06",
+        "ytd": "19.3",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@lmhouqi20W4W82N",
+        "name": "さいとう",
+        "date": "02/06",
+        "ytd": "18.7",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@toushikarasu",
+        "name": "蒼",
+        "date": "02/05",
+        "ytd": "18",
+        "assets": "666.6999999999999",
+        "pl": "102"
+    },
+    {
+        "id": "@ns4Z88PtaQnJRjS",
+        "name": "PON",
+        "date": "02/06",
+        "ytd": "16.92",
+        "assets": "7716.7628",
+        "pl": "1117"
+    },
+    {
+        "id": "@Quanta1918",
+        "name": "ブルバキ",
+        "date": "02/06",
+        "ytd": "16.27",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@Mashiyama",
+        "name": "Mashiyama",
+        "date": "02/06",
+        "ytd": "16.2",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@Ozii0",
+        "name": "おじぃ",
+        "date": "02/06",
+        "ytd": "16.13",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@itoh3d",
+        "name": "D社のいとうさん",
+        "date": "02/04",
+        "ytd": "15.7",
+        "assets": "2933",
+        "pl": "398"
+    },
+    {
+        "id": "@maboooxxx",
+        "name": "まーぼー",
+        "date": "02/06",
+        "ytd": "15.47",
+        "assets": "93.53070000000001",
+        "pl": "13"
+    },
+    {
+        "id": "@posicx",
+        "name": "ぽとふり",
+        "date": "02/06",
+        "ytd": "15.1",
+        "assets": "1795.56",
+        "pl": "236"
+    },
+    {
+        "id": "@Sasukenokabu",
+        "name": "サスケの株",
+        "date": "02/05",
+        "ytd": "15",
+        "assets": "1365",
+        "pl": "178"
+    },
+    {
+        "id": "@rabbit_invest",
+        "name": "らび",
+        "date": "02/05",
+        "ytd": "14.8",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@A77777K",
+        "name": "AKLABO",
+        "date": "02/06",
+        "ytd": "13.2",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@masakabu1213",
+        "name": "まさた",
+        "date": "02/05",
+        "ytd": "12.69",
+        "assets": "627.6833",
+        "pl": "71"
+    },
+    {
+        "id": "@highmix",
+        "name": "はいみ",
+        "date": "02/05",
+        "ytd": "12.16",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@strade18644883",
+        "name": "strade",
+        "date": "01/29",
+        "ytd": "12",
+        "assets": "328.16",
+        "pl": "35"
+    },
+    {
+        "id": "@kedamafire",
+        "name": "けだま",
+        "date": "02/06",
+        "ytd": "10.1",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@shibainucyan",
+        "name": "shibainu",
+        "date": "02/06",
+        "ytd": "10",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@Crescent5225675",
+        "name": "yUki専任",
+        "date": "02/05",
+        "ytd": "9.15",
+        "assets": "1090.4085",
+        "pl": "91"
+    },
+    {
+        "id": "@musou1231",
+        "name": "夢想人",
+        "date": "02/06",
+        "ytd": "8.8",
+        "assets": "6665",
+        "pl": "539"
+    },
+    {
+        "id": "@100_million_yen",
+        "name": "ターくん",
+        "date": "02/05",
+        "ytd": "8.67",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@Mr68818662",
+        "name": "Mr.ぽん酢マン",
+        "date": "01/30",
+        "ytd": "7.8",
+        "assets": "431.20000000000005",
+        "pl": "31"
+    },
+    {
+        "id": "@yshida02161",
+        "name": "ナシフ",
+        "date": "02/06",
+        "ytd": "7.41",
+        "assets": "977",
+        "pl": "67"
+    },
+    {
+        "id": "@syusendokoala",
+        "name": "守銭奴コアラ",
+        "date": "01/30",
+        "ytd": "6.1",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@TkxQMsTYUZQlFlN",
+        "name": "ヨモギモチ",
+        "date": "02/05",
+        "ytd": "5.8",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@keeping_safety",
+        "name": "小塚崇史",
+        "date": "02/06",
+        "ytd": "5.7",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@k_investment7",
+        "name": "K",
+        "date": "01/29",
+        "ytd": "5.17",
+        "assets": "1352.8",
+        "pl": "67"
+    },
+    {
+        "id": "@Zuca69507725",
+        "name": "Zuca",
+        "date": "02/06",
+        "ytd": "5.02",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@saki_in",
+        "name": "さきさん",
+        "date": "02/05",
+        "ytd": "4.92",
+        "assets": "11632.480399999999",
+        "pl": "545"
+    },
+    {
+        "id": "@akagi60",
+        "name": "赤木",
+        "date": "02/06",
+        "ytd": "4.9",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@ika_toushi",
+        "name": "イカ",
+        "date": "02/05",
+        "ytd": "4.81",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@micchimicchi14",
+        "name": "みっち",
+        "date": "01/29",
+        "ytd": "4.6",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@welovesfruits",
+        "name": "たなか",
+        "date": "02/06",
+        "ytd": "4.6",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@ABE_Sato",
+        "name": "さと",
+        "date": "02/05",
+        "ytd": "4.55",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@AyMkabu",
+        "name": "A-y-M",
+        "date": "01/29",
+        "ytd": "4.3",
+        "assets": "521.5",
+        "pl": "21"
+    },
+    {
+        "id": "@OhtaResearch",
+        "name": "太田忠投資評価研究",
+        "date": "02/06",
+        "ytd": "4.1",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@kabukabubanana",
+        "name": "ミニラの株日記",
+        "date": "02/06",
+        "ytd": "4",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@tarosan_0121",
+        "name": "たろ",
+        "date": "02/06",
+        "ytd": "4",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@free_worker_jp",
+        "name": "Yanaiman",
+        "date": "02/05",
+        "ytd": "3.94",
+        "assets": "1423.978",
+        "pl": "54"
+    },
+    {
+        "id": "@EijiroTanaka",
+        "name": "えいじろ",
+        "date": "02/06",
+        "ytd": "3.79",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@akitatomohiro",
+        "name": "ずみ",
+        "date": "02/06",
+        "ytd": "3.76",
+        "assets": "1278.3232",
+        "pl": "46"
+    },
+    {
+        "id": "@josefire8",
+        "name": "ジョニ",
+        "date": "01/31",
+        "ytd": "3.6",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@takefund",
+        "name": "takeoff",
+        "date": "02/05",
+        "ytd": "3.57",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@KabuFactory",
+        "name": "小谷 騰志",
+        "date": "02/06",
+        "ytd": "3.5",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@pip99577080",
+        "name": "西武線沿いで単元未",
+        "date": "02/06",
+        "ytd": "3.2",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@fujio0702",
+        "name": "ふじお",
+        "date": "02/06",
+        "ytd": "3",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@YGkoPanda",
+        "name": "小パンダ🔰",
+        "date": "02/06",
+        "ytd": "2.65",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@2004Aki",
+        "name": "すろふね",
+        "date": "02/05",
+        "ytd": "2.6",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@chun3",
+        "name": "ジュン(￣￢￣)",
+        "date": "02/06",
+        "ytd": "2.6",
+        "assets": "1551",
+        "pl": "39"
+    },
+    {
+        "id": "@kaburiber2",
+        "name": "カブリバ",
+        "date": "01/29",
+        "ytd": "2.51",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@piDPe9s73i6rnOc",
+        "name": "fred",
+        "date": "02/06",
+        "ytd": "2.3",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@RedCarrot4",
+        "name": "赤にんじん",
+        "date": "02/06",
+        "ytd": "2.3",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@yasakabu",
+        "name": "やさしい株のはじめ",
+        "date": "02/02",
+        "ytd": "2.24",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@sekiro04130808",
+        "name": "バリカン３ミリ",
+        "date": "02/06",
+        "ytd": "2",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@0124abc123",
+        "name": "ジャッカル",
+        "date": "02/06",
+        "ytd": "2",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@castle_pointer",
+        "name": "キャッスル",
+        "date": "02/06",
+        "ytd": "1.5",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@MrM1101",
+        "name": "MM",
+        "date": "02/06",
+        "ytd": "1.4",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@takakatsutoshi3",
+        "name": "たかかつ",
+        "date": "02/06",
+        "ytd": "1.35",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@kr_kabu",
+        "name": "あーる",
+        "date": "02/06",
+        "ytd": "1.27",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@syou36_investor",
+        "name": "syou36",
+        "date": "01/30",
+        "ytd": "1",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@momokurin",
+        "name": "momokurin",
+        "date": "01/30",
+        "ytd": "1",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@MrKabumania",
+        "name": "Mr.KabuMa",
+        "date": "02/06",
+        "ytd": "1",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@icetakashi2020",
+        "name": "れあきゃらがまた底",
+        "date": "02/07",
+        "ytd": "0.77",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@ok94098",
+        "name": "まぎいち(20代)",
+        "date": "01/30",
+        "ytd": "0.76",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@ACdc97757716",
+        "name": "ACdc",
+        "date": "02/06",
+        "ytd": "0.7",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@kai83660",
+        "name": "おおかみ",
+        "date": "02/06",
+        "ytd": "0.7",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@trader_hashang",
+        "name": "はっしゃん",
+        "date": "02/05",
+        "ytd": "0.6",
+        "assets": "35532.926",
+        "pl": "212"
+    },
+    {
+        "id": "@castlefrom0",
+        "name": "しろまる",
+        "date": "02/05",
+        "ytd": "0.15",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@futa_kabu",
+        "name": "ふた",
+        "date": "01/29",
+        "ytd": "0.07",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@ahoinvestor",
+        "name": "ＡＨＯ",
+        "date": "01/29",
+        "ytd": "-0.3",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@ityuuSan",
+        "name": "いちゅう",
+        "date": "01/31",
+        "ytd": "-0.31",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@kuratyan625",
+        "name": "くらぼう",
+        "date": "02/01",
+        "ytd": "-0.4",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@kabusaga",
+        "name": "ひにょゆき",
+        "date": "02/05",
+        "ytd": "-0.91",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@yuukabukabu",
+        "name": "ゆー",
+        "date": "02/05",
+        "ytd": "-1",
+        "assets": "2178",
+        "pl": "22"
+    },
+    {
+        "id": "@inves_engineer",
+        "name": "まっつん",
+        "date": "01/30",
+        "ytd": "-1.6",
+        "assets": "306.024",
+        "pl": "5"
+    },
+    {
+        "id": "@nigatsudo15",
+        "name": "二月堂🍄分娩と投",
+        "date": "01/29",
+        "ytd": "-2.88",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@Momonga262",
+        "name": "ほげ太郎",
+        "date": "01/30",
+        "ytd": "-2.99",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@nobussann",
+        "name": "nobinobi",
+        "date": "01/30",
+        "ytd": "-4",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@okuzawayukichi",
+        "name": "億沢諭吉",
+        "date": "02/06",
+        "ytd": "-6.94",
+        "assets": "246",
+        "pl": "18"
+    },
+    {
+        "id": "@sato198358",
+        "name": "snow sato",
+        "date": "02/06",
+        "ytd": "-10.18",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@aaoottoolife",
+        "name": "えおと",
+        "date": "01/31",
+        "ytd": "-10.73",
+        "assets": "-",
+        "pl": "-"
+    },
+    {
+        "id": "@imuvill",
+        "name": "井村俊哉 ",
+        "date": "01/31",
+        "ytd": "-12.7",
+        "assets": "10000",
+        "pl": "1455"
+    }
 ]
