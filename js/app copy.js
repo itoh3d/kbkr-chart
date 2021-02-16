@@ -1,11 +1,92 @@
 //データセット
 
 var kabu_datasets = [
-
-    { label : '2525mementomori' , data : [{ x : 305.2, y: 75, r: 2.8 }]},{ label : 'MrRabbit9119' , data : [{ x : 177.8, y: 64, r: 2.8 }]},{ label : 'fugo_hahahablog' , data : [{ x : 167.5, y: 63, r: 2.8 }]},{ label : 'so19715552' , data : [{ x : 112, y: 53, r: 2.8 }]},{ label : 'duck_stock' , data : [{ x : 105, y: 51, r: 2.8 }]},{ label : 'sistinavc' , data : [{ x : 78, y: 2841, r: 22.7 }]},{ label : 'futsuubito' , data : [{ x : 77.3, y: 1062, r: 13.9 }]},{ label : 'reuse_theta' , data : [{ x : 74.1, y: 43, r: 2.8 }]},{ label : 'fujitaxian' , data : [{ x : 53, y: 35, r: 2.8 }]},{ label : 'MUCHO84928709' , data : [{ x : 49, y: 236, r: 7.6 }]},{ label : 'FAA_X64' , data : [{ x : 48.2, y: 33, r: 2.8 }]},{ label : 'RokuSQ_All' , data : [{ x : 42, y: 30, r: 2.8 }]},{ label : 'pav_kabu' , data : [{ x : 39.9, y: 29, r: 2.8 }]},{ label : 'takede3' , data : [{ x : 37.1, y: 27, r: 2.8 }]},{ label : 'itoh3d' , data : [{ x : 30.1, y: 768, r: 16.2 }]},{ label : 's13776387' , data : [{ x : 28, y: 22, r: 2.8 }]},{ label : 'hajimeteosun' , data : [{ x : 27.3, y: 21, r: 2.8 }]},{ label : 'akinorimuraoka' , data : [{ x : 26.3, y: 21, r: 2.8 }]},{ label : 'buraihhh' , data : [{ x : 25.6, y: 131, r: 7.1 }]},{ label : 'investsprinter' , data : [{ x : 24.7, y: 20, r: 2.8 }]},{ label : 'Mashiyama' , data : [{ x : 22.6, y: 18, r: 2.8 }]},{ label : 'Ozii0' , data : [{ x : 21.3, y: 18, r: 2.8 }]},{ label : 'Crescent5225675' , data : [{ x : 21.2, y: 211, r: 9.8 }]},{ label : 'posicx' , data : [{ x : 19.7, y: 307, r: 12.2 }]},{ label : 'Quanta1918' , data : [{ x : 19.7, y: 16, r: 2.8 }]},{ label : 'lmhouqi20W4W82N' , data : [{ x : 18.8, y: 16, r: 2.8 }]},{ label : 'Sasukenokabu' , data : [{ x : 18, y: 214, r: 10.6 }]},{ label : 'heiseistock' , data : [{ x : 17.9, y: 15, r: 2.8 }]},{ label : 'A77777K' , data : [{ x : 16.4, y: 14, r: 2.8 }]},{ label : 'maboooxxx' , data : [{ x : 15.5, y: 13, r: 2.7 }]},{ label : '000kani000' , data : [{ x : 12.8, y: 11, r: 2.8 }]},{ label : 'keeping_safety' , data : [{ x : 12.8, y: 11, r: 2.8 }]},{ label : 'highmix' , data : [{ x : 12.7, y: 11, r: 2.8 }]},{ label : 'ok94098' , data : [{ x : 12.4, y: 11, r: 2.8 }]},{ label : 'strade18644883' , data : [{ x : 12, y: 35, r: 5.1 }]},{ label : 'yshida02161' , data : [{ x : 11, y: 10, r: 2.8 }]},{ label : 'kedamafire' , data : [{ x : 10.4, y: 9, r: 2.8 }]},{ label : 'musou1231' , data : [{ x : 10.4, y: 637, r: 23.2 }]},{ label : 'rabbit_invest' , data : [{ x : 10.1, y: 9, r: 2.8 }]},{ label : 'shibainucyan' , data : [{ x : 10, y: 9, r: 2.8 }]},{ label : 'saki_in' , data : [{ x : 9.4, y: 1041, r: 31.1 }]},{ label : 'akitatomohiro' , data : [{ x : 9.3, y: 114, r: 10.4 }]},{ label : 'syusendokoala' , data : [{ x : 8.7, y: 8, r: 2.8 }]},{ label : 'toushikarasu' , data : [{ x : 8.6, y: 49, r: 7 }]},{ label : 'fujio0702' , data : [{ x : 8.1, y: 7, r: 2.8 }]},{ label : 'TkxQMsTYUZQlFlN' , data : [{ x : 7.7, y: 7, r: 2.8 }]},{ label : 'akagi60' , data : [{ x : 7.4, y: 7, r: 2.8 }]},{ label : 'OhtaResearch' , data : [{ x : 6.6, y: 6, r: 2.8 }]},{ label : 'kabusaga' , data : [{ x : 5.8, y: 6, r: 2.8 }]},{ label : 'ABE_Sato' , data : [{ x : 5.5, y: 5, r: 2.8 }]},{ label : '2004Aki' , data : [{ x : 5.2, y: 5, r: 2.8 }]},{ label : 'free_worker_jp' , data : [{ x : 5.2, y: 72, r: 10.7 }]},{ label : 'k_investment7' , data : [{ x : 5.2, y: 67, r: 10.4 }]},{ label : 'takakatsutoshi3' , data : [{ x : 5.1, y: 5, r: 2.8 }]},{ label : 'castle_pointer' , data : [{ x : 4.8, y: 5, r: 2.8 }]},{ label : 'KabuFactory' , data : [{ x : 4.8, y: 5, r: 2.8 }]},{ label : 'MrKabumania' , data : [{ x : 4.8, y: 5, r: 2.8 }]},{ label : 'micchimicchi14' , data : [{ x : 4.6, y: 4, r: 2.8 }]},{ label : 'ACdc97757716' , data : [{ x : 4.5, y: 4, r: 2.8 }]},{ label : 'pip99577080' , data : [{ x : 4.4, y: 4, r: 2.8 }]},{ label : 'AyMkabu' , data : [{ x : 4.3, y: 21, r: 6.4 }]},{ label : 'castlefrom0' , data : [{ x : 4.3, y: 4, r: 2.8 }]},{ label : 'Zuca69507725' , data : [{ x : 4.2, y: 4, r: 2.8 }]},{ label : 'takefund' , data : [{ x : 4.1, y: 4, r: 2.8 }]},{ label : 'kabukabubanana' , data : [{ x : 4, y: 4, r: 2.8 }]},{ label : 'tarosan_0121' , data : [{ x : 4, y: 4, r: 2.8 }]},{ label : 'EijiroTanaka' , data : [{ x : 3.8, y: 4, r: 2.8 }]},{ label : 'josefire8' , data : [{ x : 3.6, y: 3, r: 2.8 }]},{ label : 'YGkoPanda' , data : [{ x : 3.5, y: 3, r: 2.8 }]},{ label : 'chun3' , data : [{ x : 3.5, y: 53, r: 11.2 }]},{ label : 'kaburiber2' , data : [{ x : 2.5, y: 2, r: 2.8 }]},{ label : 'yasakabu' , data : [{ x : 2.2, y: 2, r: 2.8 }]},{ label : 'welovesfruits' , data : [{ x : 2.2, y: 2, r: 2.8 }]},{ label : 'RedCarrot4' , data : [{ x : 2.1, y: 2, r: 2.8 }]},{ label : 'piDPe9s73i6rnOc' , data : [{ x : 2, y: 2, r: 2.8 }]},{ label : 'sekiro04130808' , data : [{ x : 2, y: 2, r: 2.8 }]},{ label : '0124abc123' , data : [{ x : 1, y: 1, r: 2.8 }]},{ label : 'MrM1101' , data : [{ x : 0.9, y: 1, r: 2.8 }]},{ label : 'momokurin' , data : [{ x : 0.9, y: 1, r: 2.8 }]},{ label : 'ika_toushi' , data : [{ x : 0.5, y: 1, r: 2.8 }]},{ label : 'kai83660' , data : [{ x : 0.4, y: 0, r: 2.8 }]},{ label : 'trader_hashang' , data : [{ x : -1.5, y: 530, r: 52.6 }]},{ label : 'inves_engineer' , data : [{ x : -1.6, y: 5, r: 4.9 }]},{ label : 'sato198358' , data : [{ x : -1.6, y: 2, r: 2.8 }]},{ label : 'yuukabukabu' , data : [{ x : -1.7, y: 37, r: 13.1 }]},{ label : 'icetakashi2020' , data : [{ x : -1.9, y: 2, r: 2.8 }]},{ label : 'ityuuSan' , data : [{ x : -2, y: 2, r: 2.8 }]},{ label : 'nigatsudo15' , data : [{ x : -2.9, y: 3, r: 2.8 }]},{ label : 'Momonga262' , data : [{ x : -3, y: 3, r: 2.8 }]},{ label : 'nobussann' , data : [{ x : -4, y: 4, r: 2.8 }]},{ label : 'okuzawayukichi' , data : [{ x : -6.9, y: 18, r: 4.4 }]},{ label : 'imuvill' , data : [{ x : -12.7, y: 1455, r: 28.2 }]},{ label : 'aaoottoolife' , data : [{ x : -19.1, y: 24, r: 2.8 }]},
-
-
+    { label : 'futsuubito' , data : [{ x : 81.4, y: 1119, r: 14.1 }]},
+    { label : 'sistinavc' , data : [{ x : 78, y: 2841, r: 22.7 }]},
+    { label : 'reuse_theta' , data : [{ x : 55.9, y: 36, r: 2.8 }]},
+    { label : 'mogmoggaboo' , data : [{ x : 32.3, y: 81, r: 5.1 }]},
+    { label : 's13776387' , data : [{ x : 28, y: 22, r: 2.8 }]},
+    { label : 'buraihhh' , data : [{ x : 25.6, y: 131, r: 7.1 }]},
+    { label : 'investsprinter' , data : [{ x : 24.7, y: 20, r: 2.8 }]},
+    { label : 'toushikarasu' , data : [{ x : 19, y: 107, r: 7.3 }]},
+    { label : 'Quanta1918' , data : [{ x : 15.8, y: 14, r: 2.8 }]},
+    { label : 'itoh3d' , data : [{ x : 15.7, y: 398, r: 15.3 }]},
+    { label : '000kani000' , data : [{ x : 12.7, y: 11, r: 2.8 }]},
+    { label : 'strade18644883' , data : [{ x : 12, y: 35, r: 5.1 }]},
+    { label : 'pav_kabu' , data : [{ x : 11, y: 10, r: 2.8 }]},
+    { label : 'ns4Z88PtaQnJRjS' , data : [{ x : 9.9, y: 651, r: 24 }]},
+    { label : 'MUCHO84928709' , data : [{ x : 7.8, y: 38, r: 6.4 }]},
+    { label : 'Mr68818662' , data : [{ x : 7.8, y: 31, r: 5.9 }]},
+    { label : 'syusendokoala' , data : [{ x : 6.1, y: 6, r: 2.8 }]},
+    { label : 'highmix' , data : [{ x : 6.1, y: 6, r: 2.8 }]},
+    { label : 'Crescent5225675' , data : [{ x : 5.9, y: 59, r: 9.2 }]},
+    { label : '_sakai_029' , data : [{ x : 5.4, y: 125, r: 14 }]},
+    { label : 'Mashiyama' , data : [{ x : 5.3, y: 5, r: 2.8 }]},
+    { label : 'k_investment7' , data : [{ x : 5.2, y: 67, r: 10.4 }]},
+    { label : 'saki_in' , data : [{ x : 5, y: 557, r: 30.4 }]},
+    { label : 'musou1231' , data : [{ x : 4.7, y: 288, r: 22.6 }]},
+    { label : 'micchimicchi14' , data : [{ x : 4.6, y: 4, r: 2.8 }]},
+    { label : 'AyMkabu' , data : [{ x : 4.3, y: 21, r: 6.4 }]},
+    { label : 'josefire8' , data : [{ x : 3.6, y: 3, r: 2.8 }]},
+    { label : 'rabbit_invest' , data : [{ x : 3.5, y: 3, r: 2.8 }]},
+    { label : 'ABE_Sato' , data : [{ x : 3.1, y: 3, r: 2.8 }]},
+    { label : 'kaburiber2' , data : [{ x : 2.5, y: 2, r: 2.8 }]},
+    { label : 'icetakashi2020' , data : [{ x : 2.3, y: 2, r: 2.8 }]},
+    { label : 'yasakabu' , data : [{ x : 2.2, y: 2, r: 2.8 }]},
+    { label : 'trader_hashang' , data : [{ x : 1.9, y: 671, r: 53.5 }]},
+    { label : 'posicx' , data : [{ x : 1.9, y: 30, r: 11.2 }]},
+    { label : '100_million_yen' , data : [{ x : 1.7, y: 2, r: 2.8 }]},
+    { label : 'A77777K' , data : [{ x : 1.7, y: 2, r: 2.8 }]},
+    { label : 'TkxQMsTYUZQlFlN' , data : [{ x : 1.7, y: 2, r: 2.8 }]},
+    { label : 'castlefrom0' , data : [{ x : 1.7, y: 2, r: 2.8 }]},
+    { label : 'free_worker_jp' , data : [{ x : 1.1, y: 15, r: 10.5 }]},
+    { label : 'syou36_investor' , data : [{ x : 1, y: 1, r: 2.8 }]},
+    { label : 'momokurin' , data : [{ x : 1, y: 1, r: 2.8 }]},
+    { label : 'ok94098' , data : [{ x : 0.8, y: 1, r: 2.8 }]},
+    { label : 'chun3' , data : [{ x : 0.4, y: 6, r: 11 }]},
+    { label : 'YGkoPanda' , data : [{ x : 0.3, y: 0, r: 2.8 }]},
+    { label : 'futa_kabu' , data : [{ x : 0.1, y: 0, r: 2.8 }]},
+    { label : 'KabuFactory' , data : [{ x : -0.2, y: 0, r: 2.8 }]},
+    { label : 'ahoinvestor' , data : [{ x : -0.3, y: 0, r: 2.8 }]},
+    { label : 'ityuuSan' , data : [{ x : -0.3, y: 0, r: 2.8 }]},
+    { label : 'kuratyan625' , data : [{ x : -0.4, y: 0, r: 2.8 }]},
+    { label : 'takakatsutoshi3' , data : [{ x : -0.5, y: 0, r: 2.8 }]},
+    { label : 'ika_toushi' , data : [{ x : -0.9, y: 1, r: 2.8 }]},
+    { label : 'inves_engineer' , data : [{ x : -1.6, y: 5, r: 4.9 }]},
+    { label : 'RedCarrot4' , data : [{ x : -1.7, y: 2, r: 2.8 }]},
+    { label : 'kai83660' , data : [{ x : -1.9, y: 2, r: 2.8 }]},
+    { label : '2004Aki' , data : [{ x : -2.1, y: 2, r: 2.8 }]},
+    { label : 'takefund' , data : [{ x : -2.7, y: 3, r: 2.8 }]},
+    { label : 'nigatsudo15' , data : [{ x : -2.9, y: 3, r: 2.8 }]},
+    { label : 'Momonga262' , data : [{ x : -3, y: 3, r: 2.8 }]},
+    { label : 'MrKabumania' , data : [{ x : -3.8, y: 4, r: 2.8 }]},
+    { label : 'nobussann' , data : [{ x : -4, y: 4, r: 2.8 }]},
+    { label : 'MrM1101' , data : [{ x : -4, y: 4, r: 2.8 }]},
+    { label : 'ACdc97757716' , data : [{ x : -4.2, y: 4, r: 2.8 }]},
+    { label : 'yuukabukabu' , data : [{ x : -5.4, y: 119, r: 12.9 }]},
+    { label : 'sato198358' , data : [{ x : -5.6, y: 6, r: 2.8 }]},
+    { label : 'aaoottoolife' , data : [{ x : -10.7, y: 12, r: 2.8 }]},
+    { label : 'imuvill' , data : [{ x : -12.7, y: 1455, r: 28.2 }]},
 ];
+
+function getJSON() {
+    var req = new XMLHttpRequest(); // XMLHttpRequest オブジェクトを生成する
+    req.onreadystatechange = function () { // XMLHttpRequest オブジェクトの状態が変化した際に呼び出されるイベントハンドラ
+        if (req.readyState == 4 && req.status == 200) { // サーバーからのレスポンスが完了し、かつ、通信が正常に終了した場合
+
+            var data = JSON.parse(req.responseText); // 取得した JSON ファイルの中身を変数へ格納
+            var len = data.length; // JSON のデータ数を取得
+
+            // JSON のデータ数分処理
+            for (var i = 0; i < len; i++) {
+                console.log("id: " + data[i].id + ", name: " + data[i].name);
+            }
+
+        }
+    };
+    req.open("GET", "data.json", false); // HTTPメソッドとアクセスするサーバーのURLを指定
+    req.send(null); // 実際にサーバーへリクエストを送信
+}
 
 // 平均・中央値用変換
 function getX(Xdata) {
